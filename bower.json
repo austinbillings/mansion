@@ -1,0 +1,24 @@
+{
+  "name": "mansion",
+  "authors": ["Austin Billings <austin@austinbillings.com>"],
+  "description": "A kickass flexbox framework. Plenty of room for everybody.",
+  "main": "dist/mansion.css",
+  "keywords": [
+    "flexbox",
+    "flex",
+    "grid",
+    "framework",
+    "ui",
+    "layout"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/austinbillings/mansion",
+  "ignore": [
+    "demo",
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

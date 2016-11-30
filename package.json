@@ -1,0 +1,32 @@
+{
+  "name": "mansion",
+  "version": "0.0.1",
+  "description": "A kickass flexbox framework. Plenty of room for everybody.",
+  "main": "dist/mansion.css",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/austinbillings/mansion.git"
+  },
+  "keywords": [
+    "flex",
+    "flexbox",
+    "css",
+    "grid",
+    "framework"
+  ],
+  "author": "Austin Billings <austin@austinbillings.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/austinbillings/mansion/issues"
+  },
+  "homepage": "https://github.com/austinbillings/mansion#readme",
+  "devDependencies": {
+    "express": "^4.14.0",
+    "gulp": "^3.9.1",
+    "gulp-less": "^3.3.0",
+    "path": "^0.12.7"
+  }
+}

@@ -1,0 +1,61 @@
+// BREAKPOINT THRESHOLDS -======================================================
+@xl-min: 1900px;
+@lg-max: (@xl-min - 1);
+@lg-min: 1200px;
+@md-max: (@lg-min - 1);
+@md-min: 768px;
+@sm-max: (@md-min - 1);
+@sm-min: 480px;
+@xs-max: (@sm-min - 1);
+
+// Media Queries Vars -=========================================================
+@xs: ~"only screen and (max-width: @{xs-max})";
+// SM - Phones and small tablets
+@_sm: ~"only screen and (max-width: @{sm-max})";
+@sm: ~"only screen and (min-width: @{sm-min}) and (max-width: @{sm-max})";
+@sm_: ~"only screen and (min-width: @{sm-min})";
+// MD - mostly tablets but some phones and computers
+@_md: ~"only screen and (max-width: @{md-max})";
+@md: ~"only screen and (min-width: @{md-min}) and (max-width: @{md-max})";
+@md_: ~"only screen and (min-width: @{md-min})";
+// LG - mostly computers and huge tablets
+@_lg: ~"only screen and (max-width: @{lg-max})";
+@lg: ~"only screen and (min-width: @{lg-min}) and (max-width: @{lg-max})";
+@lg_: ~"only screen and (min-width: @{lg-min})";
+// XL - big ass computers
+@xl: ~"only screen and (min-width: @{xl-min})";
+
+// Helper mixins -==============================================================
+.hide { display: none; }
+.show { display: block; }
+
+// Display Classes -===========================================================
+.xs-hide { @media @xs { .hide; } }
+.xs-show { @media @xs { .show; } }
+
+._sm-hide { @media @_sm { .hide; } }
+.sm-hide { @media @sm { .hide; } }
+.sm_-hide { @media @sm_ { .hide; } }
+
+._sm-show { @media @_sm { .show; } }
+.sm-show { @media @sm { .show; } }
+.sm_-show { @media @sm_ { .show; } }
+
+._md-hide { @media @_md { .hide; } }
+.md-hide { @media @md { .hide; } }
+.md_-hide { @media @md_ { .hide; } }
+
+._md-show { @media @_md { .show; } }
+.md-show { @media @md { .show; } }
+.md_-show { @media @md_ { .show; } }
+
+._lg-hide { @media @_lg { .hide; } }
+.lg-hide { @media @lg { .hide; } }
+.lg_-hide { @media @lg_ { .hide; } }
+
+._lg-show { @media @_lg { .show; } }
+.lg-show { @media @lg { .show; } }
+.lg_-show { @media @lg_ { .show; } }
+
+.xl-hide { @media @xl { .hide; } }
+.xl-show { @media @xl { .show; } }
