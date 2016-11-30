@@ -2,9 +2,95 @@
 <html>
 <head>
   <title>Mansion: The kickass flex framework.</title>
-  <style></style>
+  <style>
+    body {
+      padding:10px;
+      background-color:#efefef;
+      color: #141514;
+      font-family: 'Gotham';
+    }
+    h1 {
+      font-weight: 100;
+      font-size: 100px;
+    }
+    h1,h2,h3,h4,h5,h6 {
+      margin: 0;
+    }
+    div {
+      border: 1px solid rgba(0,0,0,0.3);
+      padding:3px;
+    }
+  </style>
+  <link rel="stylesheet" href="dist/mansion.css" />
 </head>
 <body>
-
+  <h1 style="text-align: center;">Mansion</h1>
+  <div class="grid">
+    <div class="m">
+      I'm a grid item!
+    </div>
+  </div>
+<hr />
+  <div class="grid">
+    <div class="m">
+      I'm a grid item!
+    </div>
+    <div class="m">
+      I'm a grid item!
+    </div>
+    <div class="m">
+      I'm a grid item!
+    </div>
+  </div>
+<hr />
+  <div class="grid">
+    <div class="m">
+      I'm a grid item!
+    </div>
+    <div class="m">
+      I'm a grid item!
+    </div>
+  </div>
+<hr />
+  <div class="grid">
+    <div class="m-x2">
+      I'm a DOUBLE grid item!
+    </div>
+    <div class="m">
+      I'm a grid item!
+    </div>
+  </div>
+  </div>
+<hr />
+  <div class="grid">
+    <div class="m-x3">
+      I'm a TRIPLE grid item!
+    </div>
+    <div class="m-x2">
+      I'm a DOUBLE item!
+    </div>
+  </div>
+  </div>
+<hr />
+  <div class="grid">
+    <div class="m-x3">
+      I'm a TRIPLE grid item!
+    </div>
+    <div class="m-x3">
+      Hey, me too!
+    </div>
+  </div>
+<hr />
+  <div class="grid">
+    <div class="m-2">
+      I'm two columns wide (m-2).
+    </div>
+    <div class="m-3">
+      I'm three.
+    </div>
+    <div class="m-1">
+      One here.
+    </div>
+  </div>
 </body>
 </html>
