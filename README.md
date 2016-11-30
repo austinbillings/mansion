@@ -1,3 +1,3 @@
 # Mansion
 
-A kickass flexbox-based CSS framework. Documentation coming soon.
+A kickass, responsive flexbox layout framework. Documentation coming soon.

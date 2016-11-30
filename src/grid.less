@@ -24,6 +24,10 @@
   @media @lg { max-width: 1045px; }
   @media @xl { max-width: 1250px; }
 }
+.grid-wrap {
+  .grid;
+  flex-wrap: wrap;
+}
 
 // Rows: horizontal, unsized boxes
 .row      { .flex; flex-flow: row; }
@@ -93,6 +97,7 @@
 .m-9  { flex: 0 1 75%; }
 .m-10 { flex: 0 1 83.33%; }
 .m-11 { flex: 0 1 91.66%; }
+.m-12 { flex: 0 1 100%; }
 @media @xs {
   .m-xs-1  { .m-1  }
   .m-xs-2  { .m-2  }
@@ -105,6 +110,7 @@
   .m-xs-9  { .m-9  }
   .m-xs-10 { .m-10 }
   .m-xs-11 { .m-11 }
+  .m-xs-12 { .m-12 }
 }
 @media @sm {
   .m-sm-1  { .m-1  }
@@ -118,6 +124,7 @@
   .m-sm-9  { .m-9  }
   .m-sm-10 { .m-10 }
   .m-sm-11 { .m-11 }
+  .m-sm-12 { .m-12 }
 }
 @media @md {
   .m-md-1  { .m-1  }
@@ -131,6 +138,7 @@
   .m-md-9  { .m-9  }
   .m-md-10 { .m-10 }
   .m-md-11 { .m-11 }
+  .m-md-12 { .m-12 }
 }
 @media @lg {
   .m-lg-1  { .m-1  }
@@ -144,6 +152,7 @@
   .m-lg-9  { .m-9  }
   .m-lg-10 { .m-10 }
   .m-lg-11 { .m-11 }
+  .m-lg-12 { .m-12 }
 }
 @media @xl {
   .m-xl-1  { .m-1  }
@@ -157,6 +166,7 @@
   .m-xl-9  { .m-9  }
   .m-xl-10 { .m-10 }
   .m-xl-11 { .m-11 }
+  .m-xl-12 { .m-12 }
 }
 
 .space-between { justify-content: space-between; }

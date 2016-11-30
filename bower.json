@@ -1,7 +1,7 @@
 {
   "name": "mansion",
   "authors": ["Austin Billings <austin@austinbillings.com>"],
-  "description": "A kickass flexbox framework. Plenty of room for everybody.",
+  "description": "A kickass, responsive flexbox layout framework. Plenty of room for everybody.",
   "main": "dist/mansion.css",
   "keywords": [
     "flexbox",
