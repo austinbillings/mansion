@@ -7,7 +7,7 @@
       padding:10px;
       background-color:#efefef;
       color: #141514;
-      font-family: 'Brooklyn Samuels';
+      font-family: 'Exo 2';
     }
     h1 {
       font-weight: 100;
@@ -18,179 +18,186 @@
     }
     div {
       border: 1px solid rgba(0,0,0,0.3);
-      padding:3px;
+      padding:10px;
+      font-size:16px;
+      text-align: center;
+      margin:10px;
+    }
+    .row {
+      background-color: lightblue;
+    }
+    .m-1, .m-2, .m-3, .m-4, .m-5, .m-6, .m-7, .m-8, .m-9, .m-10, .m-11, .m-12 {
+      background-color: lightgreen;
+    }
+    .m {
+      background-color: yellow;
+    }
+    .m-x2 {
+      background-color: orange;
+    }
+    .m-x3 {
+      background-color: cyan;
+    }
+    .m-x4, .m-x5, .m-x6 {
+      background-color:silver;
     }
   </style>
   <link rel="stylesheet" href="dist/mansion.css" />
 </head>
 <body>
   <h1 style="text-align: center;">Mansion</h1>
-  <div class="grid">
-    <div class="m">
-      I'm a grid item!
+
+  <div class="stack grid">
+    <div class="row">
+      <div class="m">
+        I'm a grid item!
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="m">
+        I'm a grid item!
+      </div>
+      <div class="m">
+        I'm a grid item!
+      </div>
+      <div class="m">
+        I'm a grid item!
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="m">
+        I'm a grid item!
+      </div>
+      <div class="m">
+        I'm a grid item!
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="m-x2">
+        I'm a DOUBLE grid item!
+      </div>
+      <div class="m">
+        I'm a grid item!
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="m-x3">
+        I'm a TRIPLE grid item!
+      </div>
+      <div class="m-x2">
+        I'm a DOUBLE item!
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="m-x3">
+        I'm a TRIPLE grid item!
+      </div>
+      <div class="m-x3">
+        Hey, me too!
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="m-2">
+        I'm two columns wide (m-2).
+      </div>
+      <div class="m-3">
+        I'm three.
+      </div>
+      <div class="m-1">
+        One here.
+      </div>
+      <div class="m-5">
+        FIVE lol
+      </div>
+      <div class="m-1">
+        derp
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="m-1"> .m-1 </div>
+      <div class="m-1"> .m-1 </div>
+      <div class="m-1"> .m-1 </div>
+      <div class="m-1"> .m-1 </div>
+      <div class="m-1"> .m-1 </div>
+      <div class="m-1"> .m-1 </div>
+      <div class="m-1"> .m-1 </div>
+      <div class="m-1"> .m-1 </div>
+      <div class="m-1"> .m-1 </div>
+      <div class="m-1"> .m-1 </div>
+      <div class="m-1"> .m-1 </div>
+      <div class="m-1"> .m-1 </div>
+    </div>
+
+    <div class="row">
+      <div class="m-2"> .m-2 </div>
+      <div class="m-2"> .m-2 </div>
+      <div class="m-2"> .m-2 </div>
+      <div class="m-2"> .m-2 </div>
+      <div class="m-2"> .m-2 </div>
+      <div class="m-2"> .m-2 </div>
+    </div>
+
+    <div class="row">
+      <div class="m-3"> .m-3 </div>
+      <div class="m-3"> .m-3 </div>
+      <div class="m-3"> .m-3 </div>
+      <div class="m-3"> .m-3 </div>
+    </div>
+
+    <div class="row">
+      <div class="m-4"> .m-3 </div>
+      <div class="m-4"> .m-4 </div>
+      <div class="m-4"> .m-4 </div>
+    </div>
+
+    <div class="row">
+      <div class="m-5"> .m-5 </div>
+      <div class="m-1"> .m-1 </div>
+      <div class="m-1"> .m-1 </div>
+      <div class="m-5"> .m-5 </div>
+    </div>
+
+    <div class="row">
+      <div class="m-6"> .m-6 </div>
+      <div class="m-6"> .m-6 </div>
+    </div>
+
+    <div class="row">
+      <div class="m-7"> .m-7 </div>
+      <div class="m-5"> .m-5 </div>
+    </div>
+
+    <div class="row">
+      <div class="m-8"> .m-8 </div>
+      <div class="m-4"> .m-4 </div>
+    </div>
+
+    <div class="row">
+      <div class="m-9"> .m-9 </div>
+      <div class="m-3"> .m-3 </div>
+    </div>
+
+    <div class="row">
+      <div class="m-10"> .m-10 </div>
+      <div class="m-2"> .m-2 </div>
+    </div>
+
+    <div class="row">
+      <div class="m-11"> .m-11 </div>
+      <div class="m-1"> .m-1 </div>
+    </div>
+
+    <div class="row">
+      <div class="m-12"> .m-12 </div>
+      <div class="m-5"> .m-5 </div>
     </div>
   </div>
-
-<hr />
-
-  <div class="grid">
-    <div class="m">
-      I'm a grid item!
-    </div>
-    <div class="m">
-      I'm a grid item!
-    </div>
-    <div class="m">
-      I'm a grid item!
-    </div>
-  </div>
-
-<hr />
-
-  <div class="grid">
-    <div class="m">
-      I'm a grid item!
-    </div>
-    <div class="m">
-      I'm a grid item!
-    </div>
-  </div>
-
-<hr />
-
-  <div class="grid">
-    <div class="m-x2">
-      I'm a DOUBLE grid item!
-    </div>
-    <div class="m">
-      I'm a grid item!
-    </div>
-  </div>
-  </div>
-
-<hr />
-
-  <div class="grid">
-    <div class="m-x3">
-      I'm a TRIPLE grid item!
-    </div>
-    <div class="m-x2">
-      I'm a DOUBLE item!
-    </div>
-  </div>
-  </div>
-
-<hr />
-
-  <div class="grid">
-    <div class="m-x3">
-      I'm a TRIPLE grid item!
-    </div>
-    <div class="m-x3">
-      Hey, me too!
-    </div>
-  </div>
-
-<hr />
-
-  <div class="grid">
-    <div class="m-2">
-      I'm two columns wide (m-2).
-    </div>
-    <div class="m-3">
-      I'm three.
-    </div>
-    <div class="m-1">
-      One here.
-    </div>
-    <div class="m-5">
-      FIVE lol
-    </div>
-    <div class="m-1">
-      derp
-    </div>
-  </div>
-
-<hr />
-
-  <div class="grid">
-    <div class="m-1"> .m-1 </div>
-    <div class="m-1"> .m-1 </div>
-    <div class="m-1"> .m-1 </div>
-    <div class="m-1"> .m-1 </div>
-    <div class="m-1"> .m-1 </div>
-    <div class="m-1"> .m-1 </div>
-    <div class="m-1"> .m-1 </div>
-    <div class="m-1"> .m-1 </div>
-    <div class="m-1"> .m-1 </div>
-    <div class="m-1"> .m-1 </div>
-    <div class="m-1"> .m-1 </div>
-    <div class="m-1"> .m-1 </div>
-  </div>
-
-  <div class="grid">
-    <div class="m-2"> .m-2 </div>
-    <div class="m-2"> .m-2 </div>
-    <div class="m-2"> .m-2 </div>
-    <div class="m-2"> .m-2 </div>
-    <div class="m-2"> .m-2 </div>
-    <div class="m-2"> .m-2 </div>
-  </div>
-
-  <div class="grid">
-    <div class="m-3"> .m-3 </div>
-    <div class="m-3"> .m-3 </div>
-    <div class="m-3"> .m-3 </div>
-    <div class="m-3"> .m-3 </div>
-  </div>
-
-  <div class="grid">
-    <div class="m-4"> .m-3 </div>
-    <div class="m-4"> .m-4 </div>
-    <div class="m-4"> .m-4 </div>
-  </div>
-
-  <div class="grid">
-    <div class="m-5"> .m-5 </div>
-    <div class="m-1"> .m-1 </div>
-    <div class="m-1"> .m-1 </div>
-    <div class="m-5"> .m-5 </div>
-  </div>
-
-  <div class="grid">
-    <div class="m-6"> .m-6 </div>
-    <div class="m-6"> .m-6 </div>
-  </div>
-
-  <div class="grid">
-    <div class="m-7"> .m-7 </div>
-    <div class="m-5"> .m-5 </div>
-  </div>
-
-  <div class="grid">
-    <div class="m-8"> .m-8 </div>
-    <div class="m-4"> .m-4 </div>
-  </div>
-
-  <div class="grid">
-    <div class="m-9"> .m-9 </div>
-    <div class="m-3"> .m-3 </div>
-  </div>
-
-  <div class="grid">
-    <div class="m-10"> .m-10 </div>
-    <div class="m-2"> .m-2 </div>
-  </div>
-
-  <div class="grid">
-    <div class="m-11"> .m-11 </div>
-    <div class="m-1"> .m-1 </div>
-  </div>
-
-  <div class="grid">
-    <div class="m-12"> .m-12 </div>
-    <div class="m-5"> .m-5 </div>
-  </div>
-
 </body>
 </html>
