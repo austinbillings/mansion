@@ -7,7 +7,7 @@
       padding:10px;
       background-color:#efefef;
       color: #141514;
-      font-family: 'Exo 2';
+      font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sams-serif;
     }
     h1 {
       font-weight: 100;
@@ -16,20 +16,34 @@
     h1,h2,h3,h4,h5,h6 {
       margin: 0;
     }
-    div {
+    .b {
+      font-weight: bold;
+    }
+    code {
+      letter-spacing:0.2px;
+      display: inline-block;
+      background-color:rgba(0,0,0,0.2);
+      color white;
+      padding:5px 7px;
+      margin:0px 5px;
+      border-radius:4px;
+    }
+    m {
       border: 1px solid rgba(0,0,0,0.3);
+      border-radius: 3px;
       padding:10px;
-      font-size:16px;
+      font-size:14px;
+      font-weight: 400;
       text-align: center;
       margin:10px;
     }
-    .row {
-      background-color: lightblue;
+    row {
+      background-color: rgb(228, 73, 73);
     }
     .m-1, .m-2, .m-3, .m-4, .m-5, .m-6, .m-7, .m-8, .m-9, .m-10, .m-11, .m-12 {
-      background-color: lightgreen;
+      background-color: rgb(244, 205, 90);
     }
-    .m {
+    .m, m {
       background-color: yellow;
     }
     .m-x2 {
@@ -38,166 +52,159 @@
     .m-x3 {
       background-color: cyan;
     }
+    .m-x10 {
+      background-color: firebrick;
+      color: white;
+    }
     .m-x4, .m-x5, .m-x6 {
       background-color:silver;
+    }
+    .ice {
+      background-color: transparent;
+      border: none;
     }
   </style>
   <link rel="stylesheet" href="dist/mansion.css" />
 </head>
 <body>
-  <h1 style="text-align: center;">Mansion</h1>
 
-  <div class="stack grid">
-    <div class="row">
-      <div class="m">
-        I'm a grid item!
-      </div>
-    </div>
+  <stack class="grid">
+    <row class="flow-center ice">
+      <m class="m-8 ice">
+        <img src="http://austinbillings.com/projects/Mansion.png" style="width: 100%;" />
+      </m>
+    </row>
+    <row>
+      <m>I'm a regular, single grid item! <code class="b">&lt;m&gt;</code></m>
+    </row>
+    <row>
+      <m>I'm a grid item!</m>
+      <m>I'm a grid item!</m>
+      <m>I'm a grid item!</m>
+    </row>
+    <row>
+      <m>I'm a grid item!</m>
+      <m>I'm a grid item!</m>
+    </row>
+    <row>
+      <m class="m-x2">I'm a DOUBLE grid item! <code class="b">&lt;m class="m-2x"&gt;</code></m>
+      <m>I'm a grid item!</m>
+    </row>
 
-    <div class="row">
-      <div class="m">
-        I'm a grid item!
-      </div>
-      <div class="m">
-        I'm a grid item!
-      </div>
-      <div class="m">
-        I'm a grid item!
-      </div>
-    </div>
+    <row>
+      <m class="m-x3">I'm a TRIPLE grid item!  <code class="b">&lt;m class="m-3x"&gt;</code></m>
+      <m class="m">wah</m>
+    </row>
 
-    <div class="row">
-      <div class="m">
-        I'm a grid item!
-      </div>
-      <div class="m">
-        I'm a grid item!
-      </div>
-    </div>
+    <row>
+      <m class="m-x3">I'm a TRIPLE grid item!</m>
+      <m class="m-x2">I'm a DOUBLE item!</m>
+    </row>
 
-    <div class="row">
-      <div class="m-x2">
-        I'm a DOUBLE grid item!
-      </div>
-      <div class="m">
-        I'm a grid item!
-      </div>
-    </div>
+    <row>
+      <m class="m-x3">I'm a TRIPLE grid item!</m>
+      <m class="m-x3">Hey, me too!</m>
+    </row>
 
-    <div class="row">
-      <div class="m-x3">
-        I'm a TRIPLE grid item!
-      </div>
-      <div class="m-x2">
-        I'm a DOUBLE item!
-      </div>
-    </div>
+    <row>
+      <m class="m-x10">TIMES TEN   <code class="b">&lt;m class="m-10x"&gt;</code> (It doesn't go higher than 10)</m>
+      <m>:O</m>
+    </row>
 
-    <div class="row">
-      <div class="m-x3">
-        I'm a TRIPLE grid item!
-      </div>
-      <div class="m-x3">
-        Hey, me too!
-      </div>
-    </div>
+    <row>
+      <m class="m-2">I'm two columns wide (m-2).</m>
+      <m class="m-3">I'm three.</m>
+      <m class="m-1">One here.</m>
+      <m class="m-5">FIVE lol</m>
+      <m class="m-1">derp</m>
+    </row>
 
-    <div class="row">
-      <div class="m-2">
-        I'm two columns wide (m-2).
-      </div>
-      <div class="m-3">
-        I'm three.
-      </div>
-      <div class="m-1">
-        One here.
-      </div>
-      <div class="m-5">
-        FIVE lol
-      </div>
-      <div class="m-1">
-        derp
-      </div>
-    </div>
+    <row>
+      <m><h3>There's also a 12-column grid. Here are those classes:</h3></m>
+    </row>
 
-    <div class="row">
-      <div class="m-1"> .m-1 </div>
-      <div class="m-1"> .m-1 </div>
-      <div class="m-1"> .m-1 </div>
-      <div class="m-1"> .m-1 </div>
-      <div class="m-1"> .m-1 </div>
-      <div class="m-1"> .m-1 </div>
-      <div class="m-1"> .m-1 </div>
-      <div class="m-1"> .m-1 </div>
-      <div class="m-1"> .m-1 </div>
-      <div class="m-1"> .m-1 </div>
-      <div class="m-1"> .m-1 </div>
-      <div class="m-1"> .m-1 </div>
-    </div>
+    <row>
+      <m class="m-1"> .m-1 </m>
+      <m class="m-1"> .m-1 </m>
+      <m class="m-1"> .m-1 </m>
+      <m class="m-1"> .m-1 </m>
+      <m class="m-1"> .m-1 </m>
+      <m class="m-1"> .m-1 </m>
+      <m class="m-1"> .m-1 </m>
+      <m class="m-1"> .m-1 </m>
+      <m class="m-1"> .m-1 </m>
+      <m class="m-1"> .m-1 </m>
+      <m class="m-1"> .m-1 </m>
+      <m class="m-1"> .m-1 </m>
+    </row>
 
-    <div class="row">
-      <div class="m-2"> .m-2 </div>
-      <div class="m-2"> .m-2 </div>
-      <div class="m-2"> .m-2 </div>
-      <div class="m-2"> .m-2 </div>
-      <div class="m-2"> .m-2 </div>
-      <div class="m-2"> .m-2 </div>
-    </div>
+    <row>
+      <m class="m-2"> .m-2 </m>
+      <m class="m-2"> .m-2 </m>
+      <m class="m-2"> .m-2 </m>
+      <m class="m-2"> .m-2 </m>
+      <m class="m-2"> .m-2 </m>
+      <m class="m-2"> .m-2 </m>
+    </drow
 
-    <div class="row">
-      <div class="m-3"> .m-3 </div>
-      <div class="m-3"> .m-3 </div>
-      <div class="m-3"> .m-3 </div>
-      <div class="m-3"> .m-3 </div>
-    </div>
+    <row>
+      <m class="m-3"> .m-3 </m>
+      <m class="m-3"> .m-3 </m>
+      <m class="m-3"> .m-3 </m>
+      <m class="m-3"> .m-3 </m>
+    </row>
 
-    <div class="row">
-      <div class="m-4"> .m-3 </div>
-      <div class="m-4"> .m-4 </div>
-      <div class="m-4"> .m-4 </div>
-    </div>
+    <row>
+      <m class="m-4"> .m-3 </m>
+      <m class="m-4"> .m-4 </m>
+      <m class="m-4"> .m-4 </m>
+    </row>
 
-    <div class="row">
-      <div class="m-5"> .m-5 </div>
-      <div class="m-1"> .m-1 </div>
-      <div class="m-1"> .m-1 </div>
-      <div class="m-5"> .m-5 </div>
-    </div>
+    <row>
+      <m class="m-5"> .m-5 </m>
+      <m class="m-1"> .m-1 </m>
+      <m class="m-1"> .m-1 </m>
+      <m class="m-5"> .m-5 </m>
+    </row>
 
-    <div class="row">
-      <div class="m-6"> .m-6 </div>
-      <div class="m-6"> .m-6 </div>
-    </div>
+    <row>
+      <m class="m-6"> .m-6 </m>
+      <m class="m-6"> .m-6 </m>
+    </row>
 
-    <div class="row">
-      <div class="m-7"> .m-7 </div>
-      <div class="m-5"> .m-5 </div>
-    </div>
+    <row>
+      <m class="m-7"> .m-7 </m>
+      <m class="m-5"> .m-5 </m>
+    </row>
 
-    <div class="row">
-      <div class="m-8"> .m-8 </div>
-      <div class="m-4"> .m-4 </div>
-    </div>
+    <row>
+      <m class="m-8"> .m-8 </m>
+      <m class="m-4"> .m-4 </m>
+    </row>
 
-    <div class="row">
-      <div class="m-9"> .m-9 </div>
-      <div class="m-3"> .m-3 </div>
-    </div>
+    <row>
+      <m class="m-9"> .m-9 </m>
+      <m class="m-3"> .m-3 </m>
+    </row>
 
-    <div class="row">
-      <div class="m-10"> .m-10 </div>
-      <div class="m-2"> .m-2 </div>
-    </div>
+    <row>
+      <m class="m-10"> .m-10 </m>
+      <m class="m-2"> .m-2 </m>
+    </row>
 
-    <div class="row">
-      <div class="m-11"> .m-11 </div>
-      <div class="m-1"> .m-1 </div>
-    </div>
+    <row>
+      <m class="m-11"> .m-11 </m>
+      <m class="m-1"> .m-1 </m>
+    </row>
 
-    <div class="row">
-      <div class="m-12"> .m-12 </div>
-      <div class="m-5"> .m-5 </div>
-    </div>
-  </div>
+    <row>
+      <m class="m-12"> .m-12 </m>
+    </row>
+
+    <row>
+      <m class="m-12"> .m-12 </m>
+      <m class="m-5"> .m-5 </m>
+    </row>
+  </stack>
 </body>
 </html>

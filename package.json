@@ -1,6 +1,6 @@
 {
   "name": "mansion",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "A kickass, responsive flexbox layout framework. Plenty of room for everybody.",
   "main": "dist/mansion.css",
   "scripts": {

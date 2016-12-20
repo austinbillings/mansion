@@ -1,22 +1,16 @@
 @import 'breakpoints';
+// ~ grid.less -================================================================
+.flex () { display: flex; }
 
-///////////////////////
-// ~ grid.less
-
-.flex () {
-  display: flex;
-}
-
-// Containers -=================================================================
-
-// Grids: structured, sized boxes.
-.grid-fluid {
+// Grids: structured, sized boxes.-=============================================
+grid-fluid, .grid-fluid {
   .flex;
   width: 100%;
-  margin: 0px auto;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.grid {
+grid, .grid {
   .grid-fluid;
   @media @xs { max-width: none; }
   @media @sm { max-width: 470px; }
@@ -24,22 +18,23 @@
   @media @lg { max-width: 1045px; }
   @media @xl { max-width: 1250px; }
 }
-.grid-wrap {
+
+grid-wrap, .grid-wrap {
   .grid;
   flex-wrap: wrap;
 }
 
-// Rows: horizontal, unsized boxes
-.row      { .flex; flex-flow: row; }
-.row-r    { .flex; flex-flow: row-reverse; }
-.wrap-row      { .flex; flex-flow: row wrap; }
-.wrap-row-r    { .flex; flex-flow: row-reverse wrap; }
+// Rows: horizontal, unsized boxes -============================================
+row, .row               { .flex; flex-flow: row; }
+row-r, .row-r           { .flex; flex-flow: row-reverse; }
+wrap-row, .wrap-row     { .flex; flex-flow: row wrap; }
+wrap-row-r, .wrap-row-r { .flex; flex-flow: row-reverse wrap; }
 
-// Stacks: vertical, unsized boxes
-.stack    { .flex; flex-flow: column; }
-.stack-r  { .flex; flex-flow: column-reverse; }
-.wrap-stack    { .flex; flex-flow: column wrap; }
-.wrap-stack-r  { .flex; flex-flow: column-reverse wrap; }
+// Stacks: vertical, unsized boxes -============================================
+stack, .stack               { .flex; flex-flow: column; }
+stack-r, .stack-r           { .flex; flex-flow: column-reverse; }
+wrap-stack, .wrap-stack     { .flex; flex-flow: column wrap; }
+wrap-stack-r, .wrap-stack-r { .flex; flex-flow: column-reverse wrap; }
 
 // Grow: flex-grow convenience classes
 .grow-0 { flex-grow: 0; }
@@ -67,13 +62,21 @@
 .shrink-9 { flex-shrink: 9; }
 .shrink-10{ flex-shrink: 10; }
 
-// Vertical Align (when in row, horizontal for stacks)
+// Vertical Align (when in row, horizontal for stacks) -========================
 .vc   { align-self: center; }
 .vb   { align-self: flex-end; }
 .vt   { align-self: flex-start; }
 .vbl  { align-self: baseline; }
 
-.m     { flex: 1; }
+.flow-start   { justify-content: flex-start; }
+.flow-end     { justify-content: flex-end; }
+.flow-center  { justify-content: center; }
+.flow-between { justify-content: space-between; }
+.flow-around  { justify-content: space-around; }
+
+// Cells (M for Mansion!) -=====================================================
+
+m, .m  { flex: 1; }
 .m-x1  { flex: 1; }
 .m-x2  { flex: 2; }
 .m-x3  { flex: 3; }
@@ -85,6 +88,7 @@
 .m-x9  { flex: 9; }
 .m-x10 { flex: 10; }
 
+// COOOOOLLUMMMNNNSSSSSSSS BROOOO ~=============================================
 
 .m-1  { flex: 0 1 8.33%; }
 .m-2  { flex: 0 1 16.66%; }
@@ -98,6 +102,7 @@
 .m-10 { flex: 0 1 83.33%; }
 .m-11 { flex: 0 1 91.66%; }
 .m-12 { flex: 0 1 100%; }
+
 @media @xs {
   .m-xs-1  { .m-1  }
   .m-xs-2  { .m-2  }
@@ -168,6 +173,3 @@
   .m-xl-11 { .m-11 }
   .m-xl-12 { .m-12 }
 }
-
-.space-between { justify-content: space-between; }
-.space-around { justify-content: space-around; }

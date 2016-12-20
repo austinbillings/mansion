@@ -114,100 +114,124 @@
     display: block;
   }
 }
+grid-fluid,
 .grid-fluid {
   display: flex;
   width: 100%;
-  margin: 0px auto;
+  margin-left: auto;
+  margin-right: auto;
 }
+grid,
 .grid {
   display: flex;
   width: 100%;
-  margin: 0px auto;
+  margin-left: auto;
+  margin-right: auto;
 }
 @media only screen and (max-width: 479px) {
+  grid,
   .grid {
     max-width: none;
   }
 }
 @media only screen and (min-width: 480px) and (max-width: 767px) {
+  grid,
   .grid {
     max-width: 470px;
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 1199px) {
+  grid,
   .grid {
     max-width: 750px;
   }
 }
 @media only screen and (min-width: 1200px) and (max-width: 1899px) {
+  grid,
   .grid {
     max-width: 1045px;
   }
 }
 @media only screen and (min-width: 1900px) {
+  grid,
   .grid {
     max-width: 1250px;
   }
 }
+grid-wrap,
 .grid-wrap {
   display: flex;
   width: 100%;
-  margin: 0px auto;
+  margin-left: auto;
+  margin-right: auto;
   flex-wrap: wrap;
 }
 @media only screen and (max-width: 479px) {
+  grid-wrap,
   .grid-wrap {
     max-width: none;
   }
 }
 @media only screen and (min-width: 480px) and (max-width: 767px) {
+  grid-wrap,
   .grid-wrap {
     max-width: 470px;
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 1199px) {
+  grid-wrap,
   .grid-wrap {
     max-width: 750px;
   }
 }
 @media only screen and (min-width: 1200px) and (max-width: 1899px) {
+  grid-wrap,
   .grid-wrap {
     max-width: 1045px;
   }
 }
 @media only screen and (min-width: 1900px) {
+  grid-wrap,
   .grid-wrap {
     max-width: 1250px;
   }
 }
+row,
 .row {
   display: flex;
   flex-flow: row;
 }
+row-r,
 .row-r {
   display: flex;
   flex-flow: row-reverse;
 }
+wrap-row,
 .wrap-row {
   display: flex;
   flex-flow: row wrap;
 }
+wrap-row-r,
 .wrap-row-r {
   display: flex;
   flex-flow: row-reverse wrap;
 }
+stack,
 .stack {
   display: flex;
   flex-flow: column;
 }
+stack-r,
 .stack-r {
   display: flex;
   flex-flow: column-reverse;
 }
+wrap-stack,
 .wrap-stack {
   display: flex;
   flex-flow: column wrap;
 }
+wrap-stack-r,
 .wrap-stack-r {
   display: flex;
   flex-flow: column-reverse wrap;
@@ -290,6 +314,7 @@
 .vbl {
   align-self: baseline;
 }
+m,
 .m {
   flex: 1;
 }
@@ -549,9 +574,18 @@
     flex: 0 1 100%;
   }
 }
-.space-between {
+.flow-start {
+  justify-content: flex-start;
+}
+.flow-end {
+  justify-content: flex-end;
+}
+.flow-center {
+  justify-content: center;
+}
+.flow-between {
   justify-content: space-between;
 }
-.space-around {
+.flow-around {
   justify-content: space-around;
 }
