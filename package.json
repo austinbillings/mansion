@@ -1,7 +1,7 @@
 {
   "name": "mansion",
-  "version": "1.0.0",
-  "description": "A kickass, responsive flexbox layout framework. Plenty of room for everybody.",
+  "version": "1.1.0",
+  "description": "A responsive flex layout framework for the real world.",
   "main": "dist/mansion.css",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
