@@ -29,7 +29,3 @@ Kowabunga, dude.
 **Mansion** is a system of CSS classes used in generating webpage and app layouts, based on the idea of a grid composed of various rows and columns (although 'round these parts, we call columns *stacks* to differentiate them from individual cell elements).
 
 **Mansion** is comprised not only of a flexbox grid system, but also contains responsive breakpoint-based LESS prefixes and CSS show/hide classes for instantly responsive HTML.
-
-###
-
-### `.grid` & `.grid-fluid`

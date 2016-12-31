@@ -355,7 +355,7 @@ wrap-stack-r,
 .flow-around {
   justify-content: space-around;
 }
-m,
+cell,
 .m {
   flex: 1;
 }

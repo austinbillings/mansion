@@ -1,15 +1,27 @@
-var gulp = require('gulp');
-var path = require('path');
-var less = require('gulp-less');
+const gulp = require('gulp');
+const path = require('path');
+const less = require('gulp-less');
+const concat = require('gulp-concat');
+const uglify = require('gulp-uglifycss');
 
-var source = './src/mansion.less';
-var outputDir = './dist';
+
+const source = './src/mansion.less';
+const outputDir = './dist';
 
 gulp.task('build', function () {
-  return gulp.src(source)
+  gulp.src(source)
     .pipe(less({
       paths: [ path.join(__dirname, 'src') ]
     }))
+    .pipe(gulp.dest(outputDir));
+  gulp.src(source)
+    .pipe(less({
+      paths: [ path.join(__dirname, 'src') ]
+    }))
+    .pipe(uglify({
+      uglyComments: true
+    }))
+    .pipe(concat('mansion.min.css'))
     .pipe(gulp.dest(outputDir));
 });
 
