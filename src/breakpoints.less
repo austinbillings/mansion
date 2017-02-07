@@ -7,9 +7,11 @@
 @sm-max: (@md-min - 1);
 @sm-min: 480px;
 @xs-max: (@sm-min - 1);
+@xs-min: 0px;
 
 // Media Queries Vars -=========================================================
 @xs: ~"only screen and (max-width: @{xs-max})";
+@xs_: ~"only screen and (min-width: @{xs-min})";
 // SM - Phones and small tablets
 @_sm: ~"only screen and (max-width: @{sm-max})";
 @sm: ~"only screen and (min-width: @{sm-min}) and (max-width: @{sm-max})";

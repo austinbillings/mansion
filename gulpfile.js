@@ -4,7 +4,6 @@ const less = require('gulp-less');
 const concat = require('gulp-concat');
 const uglify = require('gulp-uglifycss');
 
-
 const source = './src/mansion.less';
 const outputDir = './dist';
 
