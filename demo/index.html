@@ -64,156 +64,171 @@
       border: none;
     }
   </style>
-  <link rel="stylesheet" href="../dist/mansion.css" />
+  <link rel='stylesheet' href='../dist/mansion.css' />
 </head>
 <body>
 
-  <stack class="grid">
-    <row class="flow-center ice">
-      <box class="box-8 ice">
-        <img src="http://austinbillings.com/projects/Mansion.png" style="width: 100%;" />
+  <stack-grid>
+    <row flow='center' class='ice'>
+      <box class='box-8 ice'>
+        <img src='http://austinbillings.com/projects/Mansion.png' style='width: 100%;' />
       </box>
     </row>
     
     <row>
-      <box>I'm a regular, single grid item! <code class="b">&lt;box&gt;</code></box>
+      <box>
+        I'm a regular, single grid item! <code class='b'>&lt;box&gt;</code>
+      </box>
+    </row>
+    
+    <row flow='around'>
+      <box>I'm a grid item!</box>
+      <box>I'm a grid item!</box>
+      <box>I'm a grid item!</box>
+    </row>
+    
+    
+    <row flow='around' style='min-height: 200px;'>
+      <box grow='0' xs='2' snap='center'>
+        &lt;box grow='0' xs='2' snap='center'&gt;
+      </box>
+      <box grow='0' xs='3'>
+        &lt;box grow='0' xs='3'&gt;
+      </box>
+      <box grow='0' xs='4' snap='end'>
+        &lt;box grow='0' xs='4' snap='end'&gt;
+      </box>
     </row>
     
     <row>
       <box>I'm a grid item!</box>
       <box>I'm a grid item!</box>
-      <box>I'm a grid item!</box>
     </row>
     
     <row>
-      <box>I'm a grid item!</box>
-      <box>I'm a grid item!</box>
-    </row>
-    
-    <row>
-      <box class="box-x2">I'm a DOUBLE grid item! <code class="b">&lt;box class="box-2x"&gt;</code></box>
+      <box flex='2'>I'm a DOUBLE grid item! <code class='b'>&lt;box class='box-2x'&gt;</code></box>
       <box>I'm a grid item!</box>
     </row>
 
     <row>
-      <box class="box-x3">I'm a TRIPLE grid item!  <code class="b">&lt;box class="box-3x"&gt;</code></box>
+      <box flex='3'>I'm a TRIPLE grid item!  <code class='b'>&lt;box class='box-3x'&gt;</code></box>
       <box>wah</box>
     </row>
 
     <row>
-      <box class="box-x3">I'm a TRIPLE grid item!</box>
-      <box class="box-x2">I'm a DOUBLE item!</box>
+      <box flex='3'>I'm a TRIPLE grid item!</box>
+      <box flex='2'>I'm a DOUBLE item!</box>
     </row>
 
     <row>
-      <box-x3>I'm a TRIPLE grid item!</box-x3>
-      <box class="box-x3">Hey, me too!</box>
+      <box flex='3'>I'm a TRIPLE grid item!</box-x3>
+      <box flex='3'>Hey, me too!</box>
     </row>
 
     <row>
-      <box class="box-x10">TIMES TEN   <code class="b">&lt;box class="box-10x"&gt;</code> (It doesn't go higher than 10)</box>
+      <box flex='10'>TIMES TEN   <code class='b'>&lt;box class='box-10x'&gt;</code> (It doesn't go higher than 10)</box>
       <box>:O</box>
     </row>
 
     <row>
-      <box class="box-2">I'm two columns wide (box-2).</box>
-      <box class="box-3">I'm three.</box>
-      <box class="box-1">One here.</box>
-      <box class="box-5">FIVE lol</box>
-      <box class="box-1">derp</box>
+      <box class='box-2'>I'm two columns wide (box-2).</box>
+      <box class='box-3'>I'm three.</box>
+      <box class='box-1'>One here.</box>
+      <box class='box-5'>FIVE lol</box>
+      <box class='box-1'>derp</box>
     </row>
 
     <row>
       <box><h3>There's also a 12-column grid. Here are those classes:</h3></box>
     </row>
 
-    <row>
-      <box-1> .box-1 </box-1>
-      <box-1> .box-1 </box-1>
-      <box-1> .box-1 </box-1>
-      <box-1> .box-1 </box-1>
-      <box-1> .box-1 </box-1>
-      <box-1> .box-1 </box-1>
-      <box-1> .box-1 </box-1>
-      <box-1> .box-1 </box-1>
-      <box-1> .box-1 </box-1>
-      <box-1> .box-1 </box-1>
-      <box-1> .box-1 </box-1>
-      <box-1> .box-1 </box-1>
+    <row wrap>
+      <box xs='12' sm='1'> xs=12 sm=1 </box>
+      <box xs='12' sm='1'> xs=12 sm=1 </box>
+      <box xs='12' sm='1'> xs=12 sm=1 </box>
+      <box xs='12' sm='1'> xs=12 sm=1 </box>
+      <box xs='12' sm='1'> xs=12 sm=1 </box>
+      <box xs='12' sm='1'> xs=12 sm=1 </box>
+      <box xs='12' sm='1'> xs=12 sm=1 </box>
+      <box xs='12' sm='1'> xs=12 sm=1 </box>
+      <box xs='12' sm='1'> xs=12 sm=1 </box>
+      <box xs='12' sm='1'> xs=12 sm=1 </box>
+      <box xs='12' sm='1'> xs=12 sm=1 </box>
+      <box xs='12' sm='1'> xs=12 sm=1 </box>
     </row>
 
     <row>
-      <box class="box-2"> .box-2 </box>
-      <box class="box-2"> .box-2 </box>
-      <box class="box-2"> .box-2 </box>
-      <box class="box-2"> .box-2 </box>
-      <box class="box-2"> .box-2 </box>
-      <box class="box-2"> .box-2 </box>
+      <box xs='2'> .box-2 </box>
+      <box xs='2'> .box-2 </box>
+      <box xs='2'> .box-2 </box>
+      <box xs='2'> .box-2 </box>
+      <box xs='2'> .box-2 </box>
+      <box xs='2'> .box-2 </box>
     </row>
 
     <row>
-      <box class="box-3"> .box-3 </box>
-      <box class="box-3"> .box-3 </box>
-      <box class="box-3"> .box-3 </box>
-      <box class="box-3"> .box-3 </box>
+      <box xs='3'> .box-3 </box>
+      <box xs='3'> .box-3 </box>
+      <box xs='3'> .box-3 </box>
+      <box xs='3'> .box-3 </box>
     </row>
 
     <row>
-      <box class="box-4"> .box-3 </box>
-      <box class="box-4"> .box-4 </box>
-      <box class="box-4"> .box-4 </box>
+      <box xs='4'> .box-3 </box>
+      <box xs='4'> .box-4 </box>
+      <box xs='4'> .box-4 </box>
     </row>
 
     <row>
-      <box class="box-5"> .box-5 </box>
-      <box class="box-1"> .box-1 </box>
-      <box class="box-1"> .box-1 </box>
-      <box class="box-5"> .box-5 </box>
+      <box xs='5'> .box-5 </box>
+      <box xs='1'> .box-1 </box>
+      <box xs='1'> .box-1 </box>
+      <box xs='5'> .box-5 </box>
     </row>
 
     <row>
-      <box class="box-6"> .box-6 </box>
-      <box class="box-6"> .box-6 </box>
+      <box xs='6'> .box-6 </box>
+      <box xs='6'> .box-6 </box>
     </row>
 
     <row>
-      <box class="box-7"> .box-7 </box>
-      <box class="box-5"> .box-5 </box>
+      <box xs='7'> .box-7 </box>
+      <box xs='5'> .box-5 </box>
     </row>
 
     <row>
-      <box class="box-8"> .box-8 </box>
-      <box class="box-4"> .box-4 </box>
+      <box xs='8'> .box-8 </box>
+      <box xs='4'> .box-4 </box>
     </row>
 
     <row>
-      <box class="box-9"> .box-9 </box>
-      <box class="box-3"> .box-3 </box>
+      <box xs='9'> .box-9 </box>
+      <box xs='3'> .box-3 </box>
     </row>
 
     <row>
-      <box class="box-10"> .box-10 </box>
-      <box class="box-2"> .box-2 </box>
+      <box xs='10'> .box-10 </box>
+      <box xs='2'> .box-2 </box>
     </row>
 
     <row>
-      <box class="box-11"> .box-11 </box>
-      <box class="box-1"> .box-1 </box>
+      <box xs='11'> .box-11 </box>
+      <box xs='1'> .box-1 </box>
     </row>
 
     <row>
-      <box class="box-12"> .box-12 </box>
+      <box xs='12'> .box-12 </box>
     </row>
-
+ 
     <row>
-      <box class="box-12"> .box-12 <b>in normal row</b></box>
-      <box class="box-5"> .box-5 <b>in normal row</b> </box>
+      <box xs='12'> .box-12 <b>in normal row</b></box>
+      <box xs='5'> .box-5 <b>in normal row</b> </box>
     </row>
 
-    <wrap-row>
-      <box class="box-12"> .box-12 <b>in wrappable row</b></box>
-      <box class="box-5"> .box-5 <b>in wrappable row</b> </box>
-    </wrap-row>
-  </stack>
+    <row wrap>
+      <box xs='12'> .box-12 <b>in row with [wrap] attribute</b></box>
+      <box xs='5'> .box-5 <b>in row with [wrap] attribute</b> </box>
+    </row>
+  </stack-grid>
 </body>
 </html>
