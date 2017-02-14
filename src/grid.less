@@ -28,45 +28,6 @@ row-grid, .row-grid       { .flex; .x-axis; .grid; }
 stack, .stack             { .flex; .y-axis; }
 stack-grid, .stack-grid   { .flex; .y-axis; .grid; }
 
-// Grow: flex-grow convenience classes
-.grow-0, [grow="0"]   { flex-grow: 0; }
-.grow-1, [grow="1"]   { flex-grow: 1; }
-.grow-2, [grow="2"]   { flex-grow: 2; }
-.grow-3, [grow="3"]   { flex-grow: 3; }
-.grow-4, [grow="4"]   { flex-grow: 4; }
-.grow-5, [grow="5"]   { flex-grow: 5; }
-.grow-6, [grow="6"]   { flex-grow: 6; }
-.grow-7, [grow="7"]   { flex-grow: 7; }
-.grow-8, [grow="8"]   { flex-grow: 8; }
-.grow-9, [grow="9"]   { flex-grow: 9; }
-.grow-10, [grow="10"] { flex-grow: 10; }
-
-// Shrink: flex-shrink convenience classes
-.shrink-0, [shrink="0"]   { flex-shrink: 0; }
-.shrink-1, [shrink="1"]   { flex-shrink: 1; }
-.shrink-2, [shrink="2"]   { flex-shrink: 2; }
-.shrink-3, [shrink="3"]   { flex-shrink: 3; }
-.shrink-4, [shrink="4"]   { flex-shrink: 4; }
-.shrink-5, [shrink="5"]   { flex-shrink: 5; }
-.shrink-6, [shrink="6"]   { flex-shrink: 6; }
-.shrink-7, [shrink="7"]   { flex-shrink: 7; }
-.shrink-8, [shrink="8"]   { flex-shrink: 8; }
-.shrink-9, [shrink="9"]   { flex-shrink: 9; }
-.shrink-10, [shrink="10"] { flex-shrink: 10; }
-
-// Vertical Align (when in row, horizontal for stacks) -========================
-.snap-center,[snap="center"]  { align-self: center; }
-.snap-end, [snap="end"]       { align-self: flex-end; }
-.snap-start, [snap="start"]   { align-self: flex-start; }
-.snap-base, [snap="base"]     { align-self: baseline; }
-
-
-.flow-center, [flow="center"]   { justify-content: center; }
-.flow-end, [flow="end"]         { justify-content: flex-end; }
-.flow-start, [flow="start"]     { justify-content: flex-start; }
-.flow-between, [flow="between"] { justify-content: space-between; }
-.flow-around, [flow="around"]   { justify-content: space-around; }
-
 // Boxes - individual cells -===================================================
 
 box, .box, [box]  { flex: 1; }
@@ -166,3 +127,44 @@ box, .box, [box]  { flex: 1; }
   .box-xl-11, [xl="11"] { .box-11 }
   .box-xl-12, [xl="12"] { .box-12 }
 }
+
+
+// Grow: flex-grow convenience classes
+.grow-0, [grow="0"]   { flex-grow: 0; }
+.grow-1, [grow="1"]   { flex-grow: 1; }
+.grow-2, [grow="2"]   { flex-grow: 2; }
+.grow-3, [grow="3"]   { flex-grow: 3; }
+.grow-4, [grow="4"]   { flex-grow: 4; }
+.grow-5, [grow="5"]   { flex-grow: 5; }
+.grow-6, [grow="6"]   { flex-grow: 6; }
+.grow-7, [grow="7"]   { flex-grow: 7; }
+.grow-8, [grow="8"]   { flex-grow: 8; }
+.grow-9, [grow="9"]   { flex-grow: 9; }
+.grow-10, [grow="10"] { flex-grow: 10; }
+
+// Shrink: flex-shrink convenience classes
+.shrink-0, [shrink="0"]   { flex-shrink: 0; }
+.shrink-1, [shrink="1"]   { flex-shrink: 1; }
+.shrink-2, [shrink="2"]   { flex-shrink: 2; }
+.shrink-3, [shrink="3"]   { flex-shrink: 3; }
+.shrink-4, [shrink="4"]   { flex-shrink: 4; }
+.shrink-5, [shrink="5"]   { flex-shrink: 5; }
+.shrink-6, [shrink="6"]   { flex-shrink: 6; }
+.shrink-7, [shrink="7"]   { flex-shrink: 7; }
+.shrink-8, [shrink="8"]   { flex-shrink: 8; }
+.shrink-9, [shrink="9"]   { flex-shrink: 9; }
+.shrink-10, [shrink="10"] { flex-shrink: 10; }
+
+// Vertical Align (when in row, horizontal for stacks) -========================
+.snap-center,[snap="center"]  { align-self: center; }
+.snap-end, [snap="end"]       { align-self: flex-end; }
+.snap-start, [snap="start"]   { align-self: flex-start; }
+.snap-base, [snap="base"]     { align-self: baseline; }
+
+
+.flow-center, [flow="center"]   { justify-content: center; }
+.flow-end, [flow="end"]         { justify-content: flex-end; }
+.flow-start, [flow="start"]     { justify-content: flex-start; }
+.flow-between, [flow="between"] { justify-content: space-between; }
+.flow-around, [flow="around"]   { justify-content: space-around; }
+
