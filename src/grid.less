@@ -9,8 +9,8 @@
 .wrap, [wrap] { flex-wrap: wrap; }
 .flex ()      { display: flex; flex: 1; }
 .fluid ()     { width: 100%; margin-left: auto; margin-right: auto;}
-.x-axis ()    { flex-direction: row; &.reverse, [reverse] { flex-direction: row-reverse; } }
-.y-axis ()    { flex-direction: column; &.reverse, [reverse] { flex-direction: column-reverse; } }
+.x-axis ()    { flex-direction: row; &.reverse, &[reverse] { flex-direction: row-reverse; } }
+.y-axis ()    { flex-direction: column; &.reverse, &[reverse] { flex-direction: column-reverse; } }
 .snappy () {
   @media @xs { max-width: none; }
   @media @sm { max-width: 470px; }
@@ -69,7 +69,7 @@ stack-grid, .stack-grid   { .flex; .y-axis; .grid; }
 
 // Boxes - individual cells -===================================================
 
-box, .box  { flex: 1; }
+box, .box, [box]  { flex: 1; }
 .box-x1, [flex="1"]   { flex: 1; }
 .box-x2, [flex="2"]   { flex: 2; }
 .box-x3, [flex="3"]   { flex: 3; }

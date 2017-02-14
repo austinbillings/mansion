@@ -198,8 +198,8 @@ row,
 }
 row.reverse,
 .row.reverse,
-row [reverse],
-.row [reverse] {
+row[reverse],
+.row[reverse] {
   flex-direction: row-reverse;
 }
 row-grid,
@@ -213,8 +213,8 @@ row-grid,
 }
 row-grid.reverse,
 .row-grid.reverse,
-row-grid [reverse],
-.row-grid [reverse] {
+row-grid[reverse],
+.row-grid[reverse] {
   flex-direction: row-reverse;
 }
 @media only screen and (max-width: 479px) {
@@ -255,8 +255,8 @@ stack,
 }
 stack.reverse,
 .stack.reverse,
-stack [reverse],
-.stack [reverse] {
+stack[reverse],
+.stack[reverse] {
   flex-direction: column-reverse;
 }
 stack-grid,
@@ -270,8 +270,8 @@ stack-grid,
 }
 stack-grid.reverse,
 .stack-grid.reverse,
-stack-grid [reverse],
-.stack-grid [reverse] {
+stack-grid[reverse],
+.stack-grid[reverse] {
   flex-direction: column-reverse;
 }
 @media only screen and (max-width: 479px) {
@@ -429,7 +429,8 @@ stack-grid [reverse],
   justify-content: space-around;
 }
 box,
-.box {
+.box,
+[box] {
   flex: 1;
 }
 .box-x1,
