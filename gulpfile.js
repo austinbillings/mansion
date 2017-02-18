@@ -17,10 +17,10 @@ gulp.task('build', function () {
     .pipe(less({
       paths: [ path.join(__dirname, 'src') ]
     }))
+    .pipe(concat('mansion.min.css'))
     .pipe(uglify({
       uglyComments: true
     }))
-    .pipe(concat('mansion.min.css'))
     .pipe(gulp.dest(outputDir));
 });
 

@@ -10,22 +10,22 @@
 @xs-min: 0px;
 
 // Media Queries Vars -=========================================================
-@xs: ~"only screen and (max-width: @{xs-max})";
-@xs_: ~"only screen and (min-width: @{xs-min})";
+@xs: ~"(max-width: @{xs-max})";
+@xs_: ~"(min-width: @{xs-min})";
 // SM - Phones and small tablets
-@_sm: ~"only screen and (max-width: @{sm-max})";
-@sm: ~"only screen and (min-width: @{sm-min}) and (max-width: @{sm-max})";
-@sm_: ~"only screen and (min-width: @{sm-min})";
+@_sm: ~"(max-width: @{sm-max})";
+@sm: ~"(min-width: @{sm-min}) and (max-width: @{sm-max})";
+@sm_: ~"(min-width: @{sm-min})";
 // MD - mostly tablets but some phones and computers
-@_md: ~"only screen and (max-width: @{md-max})";
-@md: ~"only screen and (min-width: @{md-min}) and (max-width: @{md-max})";
-@md_: ~"only screen and (min-width: @{md-min})";
+@_md: ~"(max-width: @{md-max})";
+@md: ~"(min-width: @{md-min}) and (max-width: @{md-max})";
+@md_: ~"(min-width: @{md-min})";
 // LG - mostly computers and huge tablets
-@_lg: ~"only screen and (max-width: @{lg-max})";
-@lg: ~"only screen and (min-width: @{lg-min}) and (max-width: @{lg-max})";
-@lg_: ~"only screen and (min-width: @{lg-min})";
+@_lg: ~"(max-width: @{lg-max})";
+@lg: ~"(min-width: @{lg-min}) and (max-width: @{lg-max})";
+@lg_: ~"(min-width: @{lg-min})";
 // XL - big ass computers
-@xl: ~"only screen and (min-width: @{xl-min})";
+@xl: ~"(min-width: @{xl-min})";
 
 // Helper mixins -==============================================================
 .hide { display: none; }
