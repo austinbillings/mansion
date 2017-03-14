@@ -25,14 +25,13 @@ A little scary and quite new at first, but with expression and composability you
     </box>
   </row>
   
-  <article row wrap>
+  <article row wrap reverse>
     <box>
       <h3>{{ story.title }}</h3>
       <h4>{{ story.subtitle }}</h4>
     </box>
     <box flex:3>
       {{ story.text }}
-    </box>
     </box>
     <box flex:2>
       {{ author.photo }}
