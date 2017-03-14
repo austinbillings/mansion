@@ -6,6 +6,7 @@
 A little scary and quite new at first, but with expression and composability you will come to adore.
 ```HTML
 <grid wrap>
+  
   <row>
     <box xs:12 sm:6> 
       <h1>Dashboard</h1>
@@ -14,6 +15,7 @@ A little scary and quite new at first, but with expression and composability you
       Welcome, {{ user.name }}
     </box>
   </row>
+  
   <row flow:around>
     <box xs:12 sm:auto>
       <img src="logo.png">
@@ -22,6 +24,7 @@ A little scary and quite new at first, but with expression and composability you
       <p>{{ welcome.copy }}</p>
     </box>
   </row>
+  
   <article row wrap>
     <box>
       <h3>{{ story.title }}</h3>
@@ -30,7 +33,12 @@ A little scary and quite new at first, but with expression and composability you
     <box flex:3>
       {{ story.text }}
     </box>
+    </box>
+    <box flex:2>
+      {{ author.photo }}
+    </box>
   </article>
+  
 </grid>
 ```
 
