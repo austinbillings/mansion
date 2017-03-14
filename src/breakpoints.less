@@ -32,8 +32,8 @@
 .show { display: block; }
 
 // Display Classes -===========================================================
-.xs-hide { @media @xs { .hide; } }
-.xs-show { @media @xs { .show; } }
+.xs-hide, [hide\:xs] { @media @xs { .hide; } }
+.xs-show, [show\:xs] { @media @xs { .show; } }
 
 ._sm-hide { @media @_sm { .hide; } }
 .sm-hide { @media @sm { .hide; } }
