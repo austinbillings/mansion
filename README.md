@@ -17,9 +17,8 @@ A little scary and quite new at first, but with expression and composability you
   </row>
   
   <row flow:around>
-    <box xs:12 sm:auto>
-      <img src="logo.png">
-    </box>
+    <!-- All tags are free game. -->
+    <img box xs:12 sm:auto src="logo.png">
     <box snap:end>
       <p>{{ welcome.copy }}</p>
     </box>
@@ -64,12 +63,27 @@ Mansion gives you the same option, as all Mansion's features can be used as CSS 
 
 For example:
 ```HTML
-<div class="row wrap">
+<div class="row wrap flow-around">
   <div class="box-xs-12 box-sm-6">
     Hello, world!
   </div>
-  <div class="hide-xs box"
+  <div class="box-xs-12 offset-md-3 box-md-3 snap-center">
+    I greatly treasure our camaraderie, from the depths of my heart.
+  </div>
 </div>
+```
+...is a perfectly valid, totally cool Mansion layout.
+
+Moving forward, the same can be rewritten to make the most of Mansion's element and attribute selectors:
+```HTML
+<row wrap flow:around>
+  <box xs:12 sm:6>
+    Heya, worldie!
+  </box>
+  <box xs:12 md:3 offset-md:3 snap:center>
+    Chu my dawg for life, yung buhl. Real talk.
+  </box>
+</row>
 ```
 
 ## Examples
@@ -108,6 +122,7 @@ For example:
     </stack>
   </row>
   
+  <!-- Nice and simple. -->
   <footer box>
     Footer content. &copy; 2017 Mr. Company Inc.
   </footer>
