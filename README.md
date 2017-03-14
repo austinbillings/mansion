@@ -3,7 +3,70 @@
 **Mansion** is a flexbox-based CSS grid, layout, and breakpoint framework, written in LESS, for responsive layout classes that just make sense. Let's dig in.
 
 ## A Quick Taste
-One way to make a [Holy Grail Layout](https://goo.gl/Q7XjP7) using **Mansion**;
+A little scary and quite new at first, but with expression and composability you will come to adore.
+```HTML
+<grid wrap>
+  <row>
+    <box xs:12 sm:6> 
+      <h1>Dashboard</h1>
+    </box>
+    <box xs:12 sm:3 offset-sm:3>
+      Welcome, {{ user.name }}
+    </box>
+  </row>
+  <row flow:around>
+    <box xs:12 sm:auto>
+      <img src="logo.png">
+    </box>
+    <box snap:end>
+      <p>{{ welcome.copy }}</p>
+    </box>
+  </row>
+  <article row wrap>
+    <box>
+      <h3>{{ story.title }}</h3>
+      <h4>{{ story.subtitle }}</h4>
+    </box>
+    <box flex:3>
+      {{ story.text }}
+    </box>
+  </article>
+</grid>
+```
+
+## Preface
+This guide, like many front-end recruiters, assumes you have solid knowledge of **CSS** (duh), **HTML** (duh), and, believe it or not, Twitter **Bootstrap**. Additionally, 
+  
+  > If you aren't familiar with Bootstrap yet, you may still be able to follow along nodding and smiling, and perhaps not missing much. We're going to be talking about its *grid system* mostly, and relating that to how **Mansion**'s works, and what's different. Some other Bootstrap topics are relevant too, like its *responsive breakpoints* and *css-reset* stuff. That'll come in a later bit.
+
+Ideally, you should have some idea about what **Flexbox** is, why you'd wanna use it, and maybe a bit about how it works. On the other hand, if you're already a Flexbox expert, all the better!
+  > Quite a few of the features of Mansion are "convenience classes" for flexbox layout properties. Mansion is, in some sense, intended to be a modern, semantic grid system that merges some of the thinking of Bootstrap with some pure-flexbox ideas, plus some spicy attribute flair thrown in.
+
+Mansion is for people want a **responsive flex layout framework**, preferably for use in **the real world**. Mansion has the distinction of leveraging a full, HTML5 collision-free custom-element & attribute CSS selector library. Of course, if you prefer to play it safe with only using classes, that's fully supported.
+  
+  > What is meant by a **responsive flex layout framework?** Pretty simply, it's a system of display styles that let a web developer *quickly* and easily create complex, vertical and horizontal block layouts. The *responsive* bit means it should respond to various circumstances, whether it's viewed on an iPhone or a MacBook (or a potato, for that matter). that *flex* bit indicates that it's a **flexbox**-based framework. If you've made it this far, you probably know what flexbox is.
+  
+  > What is meant by the **real world**? If I could explain it, well, it wouldn't be the *real world*. You're on your own with that one.
+  
+To install, simply run `bower install mansion`.
+  
+#### Elements and Attributes as selectors
+In Bootstrap, layouts are built through classes. Of course, you have the `.container` div, which itself contains `.row` divs, which themselves contain one or more `.col-` type columns. This is great, and is obviously fully supported everywhere. This is what classes are for, and it's not a bad system at all.
+
+Mansion gives you the same option, as all Mansion's features can be used as CSS classes. Additionally, however, there is the ability to the same build simple and complex layouts using Mansion's attribute and element selectors.
+
+For example:
+```HTML
+<div class="row wrap">
+  <div class="box-xs-12 box-sm-6">
+    Hello, world!
+  </div>
+  <div class="hide-xs box"
+</div>
+```
+
+## Examples
+[Holy Grail Layout](https://goo.gl/Q7XjP7): `stack`-based using **Mansion**;
 ```HTML
 <!-- a 'stack' is like a horizontal row, but vertical.                 -->
 <!-- 'column'-like, in the tabular sense, but with the ability to wrap -->
@@ -42,35 +105,4 @@ One way to make a [Holy Grail Layout](https://goo.gl/Q7XjP7) using **Mansion**;
     Footer content. &copy; 2017 Mr. Company Inc.
   </footer>
 </stack>
-```
-
-## Preface
-This guide, like many front-end recruiters, assumes you have solid knowledge of **CSS** (duh), **HTML** (duh), and, believe it or not, Twitter **Bootstrap**. Additionally, 
-  
-  > If you aren't familiar with Bootstrap yet, you may still be able to follow along nodding and smiling, and perhaps not missing much. We're going to be talking about its *grid system* mostly, and relating that to how **Mansion**'s works, and what's different. Some other Bootstrap topics are relevant too, like its *responsive breakpoints* and *css-reset* stuff. That'll come in a later bit.
-
-Ideally, you should have some idea about what **Flexbox** is, why you'd wanna use it, and maybe a bit about how it works. On the other hand, if you're already a Flexbox expert, all the better!
-  > Quite a few of the features of Mansion are "convenience classes" for flexbox layout properties. Mansion is, in some sense, intended to be a modern, semantic grid system that merges some of the thinking of Bootstrap with some pure-flexbox ideas, plus some spicy attribute flair thrown in.
-
-Mansion is for people want a **responsive flex layout framework**, preferably for use in **the real world**. Mansion has the distinction of leveraging a full, HTML5 collision-free custom-element & attribute CSS selector library. Of course, if you prefer to play it safe with only using classes, that's fully supported.
-  
-  > What is meant by a **responsive flex layout framework?** Pretty simply, it's a system of display styles that let a web developer *quickly* and easily create complex, vertical and horizontal block layouts. The *responsive* bit means it should respond to various circumstances, whether it's viewed on an iPhone or a MacBook (or a potato, for that matter). that *flex* bit indicates that it's a **flexbox**-based framework. If you've made it this far, you probably know what flexbox is.
-  
-  > What is meant by the **real world**? If I could explain it, well, it wouldn't be the *real world*. You're on your own with that one.
-  
-To install, simply run `bower install mansion`.
-  
-#### Elements and Attributes as selectors
-In Bootstrap, layouts are built through classes. Of course, you have the `.container` div, which itself contains `.row` divs, which themselves contain one or more `.col-` type columns. This is great, and is obviously fully supported everywhere. This is what classes are for, and it's not a bad system at all.
-
-Mansion gives you the same option, as all Mansion's features can be used as CSS classes. Additionally, however, there is the ability to the same build simple and complex layouts using Mansion's attribute and element selectors.
-
-For example:
-```HTML
-<div class="row wrap">
-  <div class="box-xs-12 box-sm-6">
-    Hello, world!
-  </div>
-  <div class="hide-xs box"
-</div>
 ```
