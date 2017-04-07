@@ -17,7 +17,7 @@ A little scary and quite new at first, but with expression and composability you
   </row>
   
   <row flow:around>
-    <!-- All tags are free game. -->
+    <!-- All tags are fair game. -->
     <img box xs:12 sm:auto src="logo.png">
     <box snap:end>
       <p>{{ welcome.copy }}</p>
@@ -85,6 +85,20 @@ Moving forward, the same can be rewritten to make the most of Mansion's element 
   </box>
 </row>
 ```
+
+## Reserved Attributes & Element Names
+The following plain attribute names (i.e. `<div attribute="value">`) CSS selectors within Mansion and may cause problems if already utilized in your codebase:
+ - `wrap`
+ - `box`
+ 
+ - `xs="N"` and `xs:N`,
+ - `sm="N"` and `sm:N`,
+ - `md="N"` and `md:N`,
+ - `lg="N"` and `lg:N`, and
+ - `xl="N"` and `xl:N`, where N is a number from 1 - 12, or `auto`
+ - `flex="N"` and `flex:N`,
+ - `grow="N"` and `grow:N`, and
+ - `shrink="N"` and `shrink:N`, where N is a number from 1 - 10
 
 ## Examples
 [Holy Grail Layout](https://goo.gl/Q7XjP7): `stack`-based using **Mansion**;
