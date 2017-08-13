@@ -1,83 +1,54 @@
 <!doctype HTML>
 <html>
 <head>
-  <title>Mansion: The kickass flex framework.</title>
-  <style>
-  * {
-    box-sizing: border-box;
-  }
-    body {
-      padding:10px;
-      background-color:#efefef;
-      color: #141514;
-    }
-    h1 {
-      font-weight: 100;
-      font-size: 100px;
-    }
-    .b {
-      font-weight: bold;
-    }
-    code {
-      letter-spacing:0.2px;
-      display: inline-block;
-      background-color:rgba(0,0,0,0.2);
-      color white;
-      padding:5px 7px;
-      margin:0px 5px;
-      border-radius:4px;
-    }
-    box, box-x3, box-1 {
-      border: 1px solid rgba(0,0,0,0.3);
-      border-radius: 3px;
-      padding:10px;
-      font-size:14px;
-      font-weight: 400;
-      text-align: center;
-      margin:10px;
-    }
-    row {
-      background-color: rgb(228, 73, 73);
-    }
-    .box-1, .box-2, .box-3, .box-4, .box-5, .box-6, .box-7, .box-8, .box-9, .box-10, .box-11, .box-12
-    box-1, box-2, box-3, box-4, box-5, box-6, box-7, box-8, box-9, box-10, box-11, box-12 {
-      background-color: rgb(244, 205, 90);
-    }
-    .box, box {
-      background-color: yellow;
-    }
-    .box-x2, box-x2 {
-      background-color: orange;
-    }
-    .box-x3, box-x3 {
-      background-color: cyan;
-    }
-    .box-x10, box-x10 {
-      background-color: firebrick;
-      color: white;
-    }
-    .box-x4, .box-x5, .box-x6 {
-      background-color:silver;
-    }
-    .ice {
-      background-color: transparent;
-      border: none;
-    }
-  </style>
+  <title>Mansion: A flex layout framework for the real world.</title>
   <link rel='stylesheet' href='../dist/mansion.css' />
+  <link rel='stylesheet' href='san-francisco.css' />
+  <link rel='stylesheet' href='demo.css' />
 </head>
 <body>
-
+  
   <stack-grid>
-    <row flow='center' class='ice'>
-      <box class='box-8 ice'>
+    <row flow:center class='ice header'>
+      <!-- try changing this xs:8 to xs:3 or something! -->
+      <box xs:8 class='ice'>
         <img src='http://austinbillings.com/projects/Mansion.png' style='width: 100%;' />
       </box>
     </row>
     
     <row>
-      <box>
-        I'm a regular, single grid item! <code class='b'>&lt;box&gt;</code>
+      <box style="text-align: left;">
+        <h1>This is a <code class='b'>&lt;box&gt;</code></h1>
+        <p>A Mansion-specific HTML tag you use to specify, well, a <i>layout box</i>. Of course, <code>&lt;div&gt;</code>s are still totally cool. You can use <code>&lt;div class="box"&gt;</code> for the same effect.</p>
+        <p>
+          In fact, for every hipster-looking <code>flow:around</code>, <code>xs:12</code>, <code>offset-md:3</code>, and <code>&lt;stack wrap&gt;</code> you'll see, there are perfectly sane-looking CSS classes you can use instead. <span style="opacity: 0.8">Namely, 'flow-around', 'box-xs-12', 'offset-md-3', </span>
+        </p>
+        <p>
+          As the developer, you choose between <b>class-based use</b>:
+          <pre>
+<code>
+  &lt;div class="row wrap"&gt;
+    &lt;div class="box-xs-12 box-md-4 box-md-offset-2"&gt;
+      &lt;!-- content --&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+
+</code></pre>
+          and <b>element/attribute-based use</b>:
+          <pre>
+<code>
+  &lt;row wrap&gt;
+    &lt;box xs:12 md:4 offset-md:2&gt;
+      &lt;!-- content --&gt;
+    &lt;/box&gt;
+  &lt;/row&gt;
+  
+</code></pre>
+          Element/attribute usage has several advantages-- more concise, semantic syntax that's easier to read and write. However, you may be writing JSX syntax (which doesn't recognize Mansion attributes, and only partially with JSX's <code>is</code> attribute), have strict institutional markup standards, or need to support older browsers. In these cases, using the classes over the elements/attributes is recommended.
+        </pre>
+        <p>
+          Each <code>&lt;box&gt;</code> tag will flex to fill the space available in its container. The box elements will fill in alongside each other, 
+        </p>
       </box>
     </row>
     
@@ -121,7 +92,7 @@
     </row>
 
     <row>
-      <box flex='3'>I'm a TRIPLE grid item!</box-x3>
+      <box flex='3'>I'm a TRIPLE grid item!</box>
       <box flex='3'>Hey, me too!</box>
     </row>
 
