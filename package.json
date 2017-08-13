@@ -4,18 +4,14 @@
   "description": "A responsive flex layout framework for the real world.",
   "main": "dist/mansion.css",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "gulp build"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/austinbillings/mansion.git"
   },
   "keywords": [
-    "flex",
-    "flexbox",
-    "css",
-    "grid",
-    "framework"
+    "flex", "flexbox", "css", "grid", "framework", "ui", "toolkit"
   ],
   "author": "Austin Billings <austin@austinbillings.com>",
   "license": "MIT",
