@@ -1,6 +1,6 @@
 {
   "name": "mansion",
-  "version": "2.4.0",
+  "version": "2.4.1",
   "description": "A responsive flex layout framework for the real world.",
   "main": "dist/mansion.css",
   "scripts": {
