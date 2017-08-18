@@ -101,12 +101,12 @@ a:focus {
     display: block;
   }
 }
-@media (max-width: 1899px) {
+@media (max-width: 1499px) {
   ._lg-hide {
     display: none;
   }
 }
-@media (min-width: 1200px) and (max-width: 1899px) {
+@media (min-width: 1200px) and (max-width: 1499px) {
   .lg-hide {
     display: none;
   }
@@ -116,12 +116,12 @@ a:focus {
     display: none;
   }
 }
-@media (max-width: 1899px) {
+@media (max-width: 1499px) {
   ._lg-show {
     display: block;
   }
 }
-@media (min-width: 1200px) and (max-width: 1899px) {
+@media (min-width: 1200px) and (max-width: 1499px) {
   .lg-show {
     display: block;
   }
@@ -131,12 +131,12 @@ a:focus {
     display: block;
   }
 }
-@media (min-width: 1900px) {
+@media (min-width: 1500px) {
   .xl-hide {
     display: none;
   }
 }
-@media (min-width: 1900px) {
+@media (min-width: 1500px) {
   .xl-show {
     display: block;
   }
@@ -164,12 +164,12 @@ a:focus {
     max-width: 750px;
   }
 }
-@media (min-width: 1200px) and (max-width: 1899px) {
+@media (min-width: 1200px) and (max-width: 1499px) {
   .quantized {
     max-width: 1045px;
   }
 }
-@media (min-width: 1900px) {
+@media (min-width: 1500px) {
   .quantized {
     max-width: 1250px;
   }
@@ -201,13 +201,13 @@ grid,
     max-width: 750px;
   }
 }
-@media (min-width: 1200px) and (max-width: 1899px) {
+@media (min-width: 1200px) and (max-width: 1499px) {
   grid,
   .grid {
     max-width: 1045px;
   }
 }
-@media (min-width: 1900px) {
+@media (min-width: 1500px) {
   grid,
   .grid {
     max-width: 1250px;
@@ -269,13 +269,13 @@ row-grid[reverse],
     max-width: 750px;
   }
 }
-@media (min-width: 1200px) and (max-width: 1899px) {
+@media (min-width: 1200px) and (max-width: 1499px) {
   row-grid,
   .row-grid {
     max-width: 1045px;
   }
 }
-@media (min-width: 1900px) {
+@media (min-width: 1500px) {
   row-grid,
   .row-grid {
     max-width: 1250px;
@@ -328,13 +328,13 @@ stack-grid[reverse],
     max-width: 750px;
   }
 }
-@media (min-width: 1200px) and (max-width: 1899px) {
+@media (min-width: 1200px) and (max-width: 1499px) {
   stack-grid,
   .stack-grid {
     max-width: 1045px;
   }
 }
-@media (min-width: 1900px) {
+@media (min-width: 1500px) {
   stack-grid,
   .stack-grid {
     max-width: 1250px;
@@ -790,7 +790,7 @@ box,
     flex: 0 1 auto;
   }
 }
-@media (min-width: 1900px) {
+@media (min-width: 1500px) {
   .xl-0,
   .box-xl-0,
   [xl="0"],
@@ -1420,7 +1420,7 @@ box,
     margin-left: 100%;
   }
 }
-@media (min-width: 1900px) {
+@media (min-width: 1500px) {
   .offset-xl-0,
   [offset-xl="0"],
   [offset-xl\:0] {
