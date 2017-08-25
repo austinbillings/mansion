@@ -1,5 +1,5 @@
 {
-  "name": "mansion",
+  "name": "mansion-ui",
   "version": "2.4.4",
   "description": "A responsive flex layout framework for the real world.",
   "main": "dist/mansion.css",
