@@ -26,3 +26,12 @@
 @lg_: ~"(min-width: @{lg-min})";
 // XL - big ass computers
 @xl: ~"(min-width: @{xl-min})";
+
+// Central column width at breakpoints -=======================================
+.quantized {
+  @media @xs { max-width: none; }
+  @media @sm { max-width: 470px; }
+  @media @md { max-width: 750px; }
+  @media @lg { max-width: 1045px; }
+  @media @xl { max-width: 1250px; }
+}
