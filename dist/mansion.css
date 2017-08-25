@@ -401,7 +401,7 @@ box,
   flex: auto;
 }
 .box-0 {
-  flex: none;
+  flex: 0;
 }
 .box-1 {
   flex: 0 1 8.33%;
@@ -447,7 +447,7 @@ box,
   .box-xs-0,
   [xs="0"],
   [xs\:0] {
-    flex: none;
+    flex: 0;
   }
   .xs-1,
   .box-xs-1,
@@ -534,7 +534,7 @@ box,
   .box-sm-0,
   [sm="0"],
   [sm\:0] {
-    flex: none;
+    flex: 0;
   }
   .sm-1,
   .box-sm-1,
@@ -621,7 +621,7 @@ box,
   .box-md-0,
   [md="0"],
   [md\:0] {
-    flex: none;
+    flex: 0;
   }
   .md-1,
   .box-md-1,
@@ -708,7 +708,7 @@ box,
   .box-lg-0,
   [lg="0"],
   [lg\:0] {
-    flex: none;
+    flex: 0;
   }
   .lg-1,
   .box-lg-1,
@@ -795,7 +795,7 @@ box,
   .box-xl-0,
   [xl="0"],
   [xl\:0] {
-    flex: none;
+    flex: 0;
   }
   .xl-1,
   .box-xl-1,
