@@ -1,0 +1,85 @@
+@import '../breakpoints';
+
+// Order: rearrange your boxes declaratively
+.order-5n, [order="5n"], [order\:5n]      { order: -5; }
+.order-4n, [order="4n"], [order\:4n]      { order: -4; }
+.order-3n, [order="3n"], [order\:3n]      { order: -3; }
+.order-2n, [order="2n"], [order\:2n]      { order: -2; }
+.order-1n, [order="1n"], [order\:1n]      { order: -1; }
+.order-0, [order="0"], [order\:0]         { order: 0; }
+.order-1, [order="1"], [order\:1]         { order: 1; }
+.order-2, [order="2"], [order\:2]         { order: 2; }
+.order-3, [order="3"], [order\:3]         { order: 3; }
+.order-4, [order="4"], [order\:4]         { order: 4; }
+.order-5, [order="5"], [order\:5]         { order: 5; }
+
+
+@media @xs {
+  .xs-order-5n, [xs-order="5n"], [xs-order\:5n]      { .order-5n }
+  .xs-order-4n, [xs-order="4n"], [xs-order\:4n]      { .order-4n }
+  .xs-order-3n, [xs-order="3n"], [xs-order\:3n]      { .order-3n }
+  .xs-order-2n, [xs-order="2n"], [xs-order\:2n]      { .order-2n }
+  .xs-order-1n, [xs-order="1n"], [xs-order\:1n]      { .order-1n }
+  .xs-order-0, [xs-order="0"], [xs-order\:0]         { .order-0 }
+  .xs-order-1, [xs-order="1"], [xs-order\:1]         { .order-1 }
+  .xs-order-2, [xs-order="2"], [xs-order\:2]         { .order-2 }
+  .xs-order-3, [xs-order="3"], [xs-order\:3]         { .order-3 }
+  .xs-order-4, [xs-order="4"], [xs-order\:4]         { .order-4 }
+  .xs-order-5, [xs-order="5"], [xs-order\:5]         { .order-5 }
+}
+
+@media @sm {
+  .sm-order-5n, [sm-order="5n"], [sm-order\:5n]      { .order-5n }
+  .sm-order-4n, [sm-order="4n"], [sm-order\:4n]      { .order-4n }
+  .sm-order-3n, [sm-order="3n"], [sm-order\:3n]      { .order-3n }
+  .sm-order-2n, [sm-order="2n"], [sm-order\:2n]      { .order-2n }
+  .sm-order-1n, [sm-order="1n"], [sm-order\:1n]      { .order-1n }
+  .sm-order-0, [sm-order="0"], [sm-order\:0]         { .order-0 }
+  .sm-order-1, [sm-order="1"], [sm-order\:1]         { .order-1 }
+  .sm-order-2, [sm-order="2"], [sm-order\:2]         { .order-2 }
+  .sm-order-3, [sm-order="3"], [sm-order\:3]         { .order-3 }
+  .sm-order-4, [sm-order="4"], [sm-order\:4]         { .order-4 }
+  .sm-order-5, [sm-order="5"], [sm-order\:5]         { .order-5 }
+}
+
+@media @md {
+  .md-order-5n, [md-order="5n"], [md-order\:5n]      { .order-5n }
+  .md-order-4n, [md-order="4n"], [md-order\:4n]      { .order-4n }
+  .md-order-3n, [md-order="3n"], [md-order\:3n]      { .order-3n }
+  .md-order-2n, [md-order="2n"], [md-order\:2n]      { .order-2n }
+  .md-order-1n, [md-order="1n"], [md-order\:1n]      { .order-1n }
+  .md-order-0, [md-order="0"], [md-order\:0]         { .order-0 }
+  .md-order-1, [md-order="1"], [md-order\:1]         { .order-1 }
+  .md-order-2, [md-order="2"], [md-order\:2]         { .order-2 }
+  .md-order-3, [md-order="3"], [md-order\:3]         { .order-3 }
+  .md-order-4, [md-order="4"], [md-order\:4]         { .order-4 }
+  .md-order-5, [md-order="5"], [md-order\:5]         { .order-5 }
+}
+
+@media @lg {
+  .lg-order-5n, [lg-order="5n"], [lg-order\:5n]      { .order-5n }
+  .lg-order-4n, [lg-order="4n"], [lg-order\:4n]      { .order-4n }
+  .lg-order-3n, [lg-order="3n"], [lg-order\:3n]      { .order-3n }
+  .lg-order-2n, [lg-order="2n"], [lg-order\:2n]      { .order-2n }
+  .lg-order-1n, [lg-order="1n"], [lg-order\:1n]      { .order-1n }
+  .lg-order-0, [lg-order="0"], [lg-order\:0]         { .order-0 }
+  .lg-order-1, [lg-order="1"], [lg-order\:1]         { .order-1 }
+  .lg-order-2, [lg-order="2"], [lg-order\:2]         { .order-2 }
+  .lg-order-3, [lg-order="3"], [lg-order\:3]         { .order-3 }
+  .lg-order-4, [lg-order="4"], [lg-order\:4]         { .order-4 }
+  .lg-order-5, [lg-order="5"], [lg-order\:5]         { .order-5 }
+}
+
+@media @xl {
+  .xl-order-5n, [xl-order="5n"], [xl-order\:5n]      { .order-5n }
+  .xl-order-4n, [xl-order="4n"], [xl-order\:4n]      { .order-4n }
+  .xl-order-3n, [xl-order="3n"], [xl-order\:3n]      { .order-3n }
+  .xl-order-2n, [xl-order="2n"], [xl-order\:2n]      { .order-2n }
+  .xl-order-1n, [xl-order="1n"], [xl-order\:1n]      { .order-1n }
+  .xl-order-0, [xl-order="0"], [xl-order\:0]         { .order-0 }
+  .xl-order-1, [xl-order="1"], [xl-order\:1]         { .order-1 }
+  .xl-order-2, [xl-order="2"], [xl-order\:2]         { .order-2 }
+  .xl-order-3, [xl-order="3"], [xl-order\:3]         { .order-3 }
+  .xl-order-4, [xl-order="4"], [xl-order\:4]         { .order-4 }
+  .xl-order-5, [xl-order="5"], [xl-order\:5]         { .order-5 }
+}

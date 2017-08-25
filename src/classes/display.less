@@ -1,0 +1,36 @@
+@import '../breakpoints';
+
+// Helper mixins -==============================================================
+.hide { display: none; }
+.show { display: block; }
+
+// Display Classes -===========================================================
+.xs-hide, [hide\:xs] { @media @xs { .hide; } }
+.xs-show, [show\:xs] { @media @xs { .show; } }
+
+._sm-hide { @media @_sm { .hide; } }
+.sm-hide { @media @sm { .hide; } }
+.sm_-hide { @media @sm_ { .hide; } }
+
+._sm-show { @media @_sm { .show; } }
+.sm-show { @media @sm { .show; } }
+.sm_-show { @media @sm_ { .show; } }
+
+._md-hide { @media @_md { .hide; } }
+.md-hide { @media @md { .hide; } }
+.md_-hide { @media @md_ { .hide; } }
+
+._md-show { @media @_md { .show; } }
+.md-show { @media @md { .show; } }
+.md_-show { @media @md_ { .show; } }
+
+._lg-hide { @media @_lg { .hide; } }
+.lg-hide { @media @lg { .hide; } }
+.lg_-hide { @media @lg_ { .hide; } }
+
+._lg-show { @media @_lg { .show; } }
+.lg-show { @media @lg { .show; } }
+.lg_-show { @media @lg_ { .show; } }
+
+.xl-hide { @media @xl { .hide; } }
+.xl-show { @media @xl { .show; } }
