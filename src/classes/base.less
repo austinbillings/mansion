@@ -3,15 +3,16 @@
 .wrap, [wrap]     { flex-wrap: wrap; }
 .nowrap, [nowrap] { flex-wrap: nowrap; }
 .sized ()         { box-sizing: border-box; }
-.flex ()          { display: flex; flex: none; .sized; * { .sized } }
-.fluid ()         { width: 100%; margin-left: auto; margin-right: auto;}
-.x-axis ()        { flex-direction: row; &.reverse, &[reverse] { flex-direction: row-reverse; } }
-.y-axis ()        { flex-direction: column; &.reverse, &[reverse] { flex-direction: column-reverse; } }
+.flex ()          { display: flex; flex: none; }
+.full ()          { flex-basis: 100%; }
+.fluid ()         { width: 100%; margin-left: auto; margin-right: auto; }
+.x-axis ()        { width: 100%; flex-direction: row; &.reverse, &[reverse] { flex-direction: row-reverse; } }
+.y-axis ()        { height: 100%; flex-direction: column; &.reverse, &[reverse] { flex-direction: column-reverse; } }
 
-box, .box, [box]          { flex: none; }
-row, .row                 { .flex; .x-axis; .wrap; }
-grid, .grid               { .flex; .fluid; .wrap; .quantized; }
-stack, .stack             { .flex; .y-axis; .wrap; }
-row-grid, .row-grid       { .flex; .x-axis; .wrap; .grid; }
-stack-grid, .stack-grid   { .flex; .y-axis; .wrap; .grid; }
-grid-fluid, .grid-fluid   { .flex; .fluid; .wrap; }
+grid, .grid               { .sized; .flex; .fluid; .wrap; .quantized; }
+row, .row                 { .sized; .flex; .full; .wrap; .x-axis; }
+stack, .stack             { .sized; .flex; .full; .wrap; .y-axis; }
+box, .box, [box]          { .sized; flex: none; }
+row-grid, .row-grid       { .sized; .flex; .x-axis; .wrap; .grid; }
+stack-grid, .stack-grid   { .sized; .flex; .y-axis; .wrap; .grid; }
+grid-fluid, .grid-fluid   { .sized; .flex; .fluid; .wrap; }

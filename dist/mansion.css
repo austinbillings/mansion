@@ -149,42 +149,15 @@
 [nowrap] {
   flex-wrap: nowrap;
 }
-box,
-.box,
-[box] {
-  flex: none;
-}
-row,
-.row {
-  display: flex;
-  flex: none;
-  box-sizing: border-box;
-  flex-direction: row;
-  flex-wrap: wrap;
-}
-row *,
-.row * {
-  box-sizing: border-box;
-}
-row.reverse,
-.row.reverse,
-row[reverse],
-.row[reverse] {
-  flex-direction: row-reverse;
-}
 grid,
 .grid {
+  box-sizing: border-box;
   display: flex;
   flex: none;
-  box-sizing: border-box;
   width: 100%;
   margin-left: auto;
   margin-right: auto;
   flex-wrap: wrap;
-}
-grid *,
-.grid * {
-  box-sizing: border-box;
 }
 @media (max-width: 479px) {
   grid,
@@ -216,17 +189,31 @@ grid *,
     max-width: 1250px;
   }
 }
-stack,
-.stack {
+row,
+.row {
+  box-sizing: border-box;
   display: flex;
   flex: none;
-  box-sizing: border-box;
-  flex-direction: column;
+  flex-basis: 100%;
   flex-wrap: wrap;
+  width: 100%;
+  flex-direction: row;
 }
-stack *,
-.stack * {
+row.reverse,
+.row.reverse,
+row[reverse],
+.row[reverse] {
+  flex-direction: row-reverse;
+}
+stack,
+.stack {
   box-sizing: border-box;
+  display: flex;
+  flex: none;
+  flex-basis: 100%;
+  flex-wrap: wrap;
+  height: 100%;
+  flex-direction: column;
 }
 stack.reverse,
 .stack.reverse,
@@ -234,30 +221,28 @@ stack[reverse],
 .stack[reverse] {
   flex-direction: column-reverse;
 }
+box,
+.box,
+[box] {
+  box-sizing: border-box;
+  flex: none;
+}
 row-grid,
 .row-grid {
   flex-direction: row;
+  box-sizing: border-box;
   display: flex;
   flex: none;
-  box-sizing: border-box;
   width: 100%;
   margin-left: auto;
   margin-right: auto;
   flex-wrap: wrap;
-}
-row-grid *,
-.row-grid * {
-  box-sizing: border-box;
 }
 row-grid.reverse,
 .row-grid.reverse,
 row-grid[reverse],
 .row-grid[reverse] {
   flex-direction: row-reverse;
-}
-row-grid *,
-.row-grid * {
-  box-sizing: border-box;
 }
 @media (max-width: 479px) {
   row-grid,
@@ -291,28 +276,21 @@ row-grid *,
 }
 stack-grid,
 .stack-grid {
+  height: 100%;
   flex-direction: column;
+  box-sizing: border-box;
   display: flex;
   flex: none;
-  box-sizing: border-box;
   width: 100%;
   margin-left: auto;
   margin-right: auto;
   flex-wrap: wrap;
-}
-stack-grid *,
-.stack-grid * {
-  box-sizing: border-box;
 }
 stack-grid.reverse,
 .stack-grid.reverse,
 stack-grid[reverse],
 .stack-grid[reverse] {
   flex-direction: column-reverse;
-}
-stack-grid *,
-.stack-grid * {
-  box-sizing: border-box;
 }
 @media (max-width: 479px) {
   stack-grid,
@@ -346,17 +324,13 @@ stack-grid *,
 }
 grid-fluid,
 .grid-fluid {
+  box-sizing: border-box;
   display: flex;
   flex: none;
-  box-sizing: border-box;
   width: 100%;
   margin-left: auto;
   margin-right: auto;
   flex-wrap: wrap;
-}
-grid-fluid *,
-.grid-fluid * {
-  box-sizing: border-box;
 }
 .box-x1,
 .flex-1,
