@@ -11,7 +11,13 @@
     "url": "git+https://github.com/austinbillings/mansion.git"
   },
   "keywords": [
-    "flex", "flexbox", "css", "grid", "framework", "ui", "toolkit"
+    "flex",
+    "flexbox",
+    "css",
+    "grid",
+    "framework",
+    "ui",
+    "toolkit"
   ],
   "author": "Austin Billings <austin@austinbillings.com>",
   "license": "MIT",
