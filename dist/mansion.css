@@ -194,9 +194,7 @@ row,
   box-sizing: border-box;
   display: flex;
   flex: none;
-  flex-basis: 100%;
   flex-wrap: wrap;
-  width: 100%;
   flex-direction: row;
 }
 row.reverse,
@@ -210,15 +208,57 @@ stack,
   box-sizing: border-box;
   display: flex;
   flex: none;
-  flex-basis: 100%;
   flex-wrap: wrap;
-  height: 100%;
   flex-direction: column;
 }
 stack.reverse,
 .stack.reverse,
 stack[reverse],
 .stack[reverse] {
+  flex-direction: column-reverse;
+}
+row-full,
+.row-full {
+  box-sizing: border-box;
+  display: flex;
+  flex: none;
+  flex-basis: 100%;
+  flex-wrap: wrap;
+  width: 100%;
+  flex-direction: row;
+}
+row-full.reverse,
+.row-full.reverse,
+row-full[reverse],
+.row-full[reverse] {
+  flex-direction: row-reverse;
+}
+row-full.reverse,
+.row-full.reverse,
+row-full[reverse],
+.row-full[reverse] {
+  flex-direction: row-reverse;
+}
+stack-full,
+.stack-full {
+  box-sizing: border-box;
+  display: flex;
+  flex: none;
+  flex-basis: 100%;
+  flex-wrap: wrap;
+  height: 100%;
+  flex-direction: column;
+}
+stack-full.reverse,
+.stack-full.reverse,
+stack-full[reverse],
+.stack-full[reverse] {
+  flex-direction: column-reverse;
+}
+stack-full.reverse,
+.stack-full.reverse,
+stack-full[reverse],
+.stack-full[reverse] {
   flex-direction: column-reverse;
 }
 box,
@@ -276,7 +316,6 @@ row-grid[reverse],
 }
 stack-grid,
 .stack-grid {
-  height: 100%;
   flex-direction: column;
   box-sizing: border-box;
   display: flex;
