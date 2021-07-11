@@ -5,22 +5,22 @@
 }
 @media (min-width: 480px) and (max-width: 767px) {
   .quantized {
-    max-width: 470px;
+    max-width: 660px;
   }
 }
-@media (min-width: 768px) and (max-width: 1199px) {
+@media (min-width: 768px) and (max-width: 1049px) {
   .quantized {
-    max-width: 750px;
+    max-width: 760px;
   }
 }
-@media (min-width: 1200px) and (max-width: 1499px) {
+@media (min-width: 1050px) and (max-width: 1499px) {
   .quantized {
-    max-width: 1045px;
+    max-width: 1040px;
   }
 }
 @media (min-width: 1500px) {
   .quantized {
-    max-width: 1250px;
+    max-width: 1200px;
   }
 }
 .hide {
@@ -71,12 +71,12 @@
     display: block;
   }
 }
-@media (max-width: 1199px) {
+@media (max-width: 1219px) {
   ._md-hide {
     display: none;
   }
 }
-@media (min-width: 768px) and (max-width: 1199px) {
+@media (min-width: 768px) and (max-width: 1219px) {
   .md-hide {
     display: none;
   }
@@ -86,12 +86,12 @@
     display: none;
   }
 }
-@media (max-width: 1199px) {
+@media (max-width: 1219px) {
   ._md-show {
     display: block;
   }
 }
-@media (min-width: 768px) and (max-width: 1199px) {
+@media (min-width: 768px) and (max-width: 1219px) {
   .md-show {
     display: block;
   }
@@ -106,12 +106,12 @@
     display: none;
   }
 }
-@media (min-width: 1200px) and (max-width: 1499px) {
+@media (min-width: 1220px) and (max-width: 1499px) {
   .lg-hide {
     display: none;
   }
 }
-@media (min-width: 1200px) {
+@media (min-width: 1220px) {
   .lg_-hide {
     display: none;
   }
@@ -121,12 +121,12 @@
     display: block;
   }
 }
-@media (min-width: 1200px) and (max-width: 1499px) {
+@media (min-width: 1220px) and (max-width: 1499px) {
   .lg-show {
     display: block;
   }
 }
-@media (min-width: 1200px) {
+@media (min-width: 1220px) {
   .lg_-show {
     display: block;
   }
@@ -168,25 +168,25 @@ grid,
 @media (min-width: 480px) and (max-width: 767px) {
   grid,
   .grid {
-    max-width: 470px;
+    max-width: 660px;
   }
 }
-@media (min-width: 768px) and (max-width: 1199px) {
+@media (min-width: 768px) and (max-width: 1049px) {
   grid,
   .grid {
-    max-width: 750px;
+    max-width: 760px;
   }
 }
-@media (min-width: 1200px) and (max-width: 1499px) {
+@media (min-width: 1050px) and (max-width: 1499px) {
   grid,
   .grid {
-    max-width: 1045px;
+    max-width: 1040px;
   }
 }
 @media (min-width: 1500px) {
   grid,
   .grid {
-    max-width: 1250px;
+    max-width: 1200px;
   }
 }
 row,
@@ -293,25 +293,25 @@ row-grid[reverse],
 @media (min-width: 480px) and (max-width: 767px) {
   row-grid,
   .row-grid {
-    max-width: 470px;
+    max-width: 660px;
   }
 }
-@media (min-width: 768px) and (max-width: 1199px) {
+@media (min-width: 768px) and (max-width: 1049px) {
   row-grid,
   .row-grid {
-    max-width: 750px;
+    max-width: 760px;
   }
 }
-@media (min-width: 1200px) and (max-width: 1499px) {
+@media (min-width: 1050px) and (max-width: 1499px) {
   row-grid,
   .row-grid {
-    max-width: 1045px;
+    max-width: 1040px;
   }
 }
 @media (min-width: 1500px) {
   row-grid,
   .row-grid {
-    max-width: 1250px;
+    max-width: 1200px;
   }
 }
 stack-grid,
@@ -340,25 +340,25 @@ stack-grid[reverse],
 @media (min-width: 480px) and (max-width: 767px) {
   stack-grid,
   .stack-grid {
-    max-width: 470px;
+    max-width: 660px;
   }
 }
-@media (min-width: 768px) and (max-width: 1199px) {
+@media (min-width: 768px) and (max-width: 1049px) {
   stack-grid,
   .stack-grid {
-    max-width: 750px;
+    max-width: 760px;
   }
 }
-@media (min-width: 1200px) and (max-width: 1499px) {
+@media (min-width: 1050px) and (max-width: 1499px) {
   stack-grid,
   .stack-grid {
-    max-width: 1045px;
+    max-width: 1040px;
   }
 }
 @media (min-width: 1500px) {
   stack-grid,
   .stack-grid {
-    max-width: 1250px;
+    max-width: 1200px;
   }
 }
 grid-fluid,
@@ -740,7 +740,7 @@ grid-fluid,
     flex: 0 1 auto;
   }
 }
-@media (min-width: 1200px) {
+@media (min-width: 1220px) {
   .lg-0,
   .box-lg-0,
   [lg="0"],
@@ -1083,7 +1083,7 @@ grid-fluid,
     order: 5;
   }
 }
-@media (min-width: 768px) and (max-width: 1199px) {
+@media (min-width: 768px) and (max-width: 1219px) {
   .md-order-5n,
   [md-order="5n"],
   [md-order\:5n] {
@@ -1140,7 +1140,7 @@ grid-fluid,
     order: 5;
   }
 }
-@media (min-width: 1200px) and (max-width: 1499px) {
+@media (min-width: 1220px) and (max-width: 1499px) {
   .lg-order-5n,
   [lg-order="5n"],
   [lg-order\:5n] {
@@ -1730,7 +1730,7 @@ grid-fluid,
     margin-left: 100%;
   }
 }
-@media (min-width: 1200px) {
+@media (min-width: 1220px) {
   .lg-offset-0,
   [lg-offset="0"],
   [lg-offset\:0] {
