@@ -1,7 +1,7 @@
 // BREAKPOINT THRESHOLDS -======================================================
 @xl-min: 1500px;
 @lg-max: (@xl-min - 1);
-@lg-min: 1200px;
+@lg-min: 1220px;
 @md-max: (@lg-min - 1);
 @md-min: 768px;
 @sm-max: (@md-min - 1);
@@ -29,9 +29,9 @@
 
 // Central column width at breakpoints -=======================================
 .quantized {
-  @media @xs { max-width: none; }
-  @media @sm { max-width: 470px; }
-  @media @md { max-width: 750px; }
-  @media @lg { max-width: 1045px; }
-  @media @xl { max-width: 1250px; }
+  @media (max-width: 479px) { max-width: none; }
+  @media (min-width: 480px) and (max-width: 767px) { max-width: 660px; }
+  @media (min-width: 768px) and (max-width: 1049px) { max-width: 760px; }
+  @media (min-width: 1050px) and (max-width: 1499px) { max-width: 1040px; }
+  @media (min-width: 1500px) { max-width: 1200px; }
 }
