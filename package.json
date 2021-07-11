@@ -1,6 +1,6 @@
 {
   "name": "mansion-ui",
-  "version": "2.6.2",
+  "version": "2.6.3",
   "description": "A responsive flex layout framework for the real world.",
   "main": "dist/mansion.css",
   "scripts": {
